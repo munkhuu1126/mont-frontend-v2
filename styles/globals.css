@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+body{
+  background-image: url('../img/header.gif');
+  background-repeat: no-repeat;
+  background-color:#f5f9fb;
+  background-position: top center;
 }
-
-* {
-  box-sizing: border-box;
+@media screen and (max-width: 800px) {
+  body{
+    background-position: 65% 0%;
+  }
 }
