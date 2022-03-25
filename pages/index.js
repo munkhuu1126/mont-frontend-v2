@@ -5,7 +5,7 @@ import Community from '../components/Community';
 import ExplanationCard from '../components/ExplanationCard';
 import Faq from '../components/Faq';
 
-import Intro from '../components/intro';
+import Intro from '../components/Intro';
 import MarketCap from '../components/MarketCap';
 
 import News from '../components/News';
