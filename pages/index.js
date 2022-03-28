@@ -7,7 +7,6 @@ import Faq from '../components/Faq';
 
 import Intro from '../components/Intro';
 import MarketCap from '../components/MarketCap';
-
 import News from '../components/News';
 import Partners from '../components/Partners'
 import news1 from '../img/news1.png'
@@ -17,7 +16,7 @@ import Head from 'next/head';
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App home-background">
       <Head>
         <title>MONT About</title>
       </Head>

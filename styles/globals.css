@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+.home-background{
   background-image: url('../img/header.gif');
   background-repeat: no-repeat;
   background-color:#f5f9fb;
   background-position: top center;
+}
+.banner-background{
+  background-image: url('../img/bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (max-width: 800px) {
   body{

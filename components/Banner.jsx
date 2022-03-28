@@ -6,13 +6,13 @@ import Link from 'next/link'
 
 export default function Banner() {
     return (
-        <div className="my-20">
+        <div className="my-20 banner-background">
             <div className="text-white relative">
 
 
 
 
-                <div className="container mx-auto relative z-10 lg:px-0 py-20 px-4">
+                <div className="container mx-auto relative lg:px-0 py-20 px-4">
                     <h1 className="text-4xl font-bold text-center">Proof of funds</h1>
                     <p className="mt-3 lg:px-72 lg:text-left text-justify">Every month, certain management assertions related to the total USDC in circulation
                         are attested to by top 5 accounting services firm, Grant Thornton LLP. We publish those
@@ -28,7 +28,7 @@ export default function Banner() {
                     </div>
 
                 </div>
-                <Image src={background} className="absolute w-full a h-full -z-10" layout='fill' objectFit="cover" alt='' />
+                
                 
             </div>
         </div>
