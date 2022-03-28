@@ -17,7 +17,7 @@ export default function Partners() {
     const companies2 = [grape, diverse, ict, tenger]
     const companyList = companies.map((company) => {
         return (
-            <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative lg:w-[160px] w-[120px] flex justify-center h-[auto] hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image src={company} alt=""/>
             </div>
         )
@@ -25,7 +25,7 @@ export default function Partners() {
     const companyList2 = companies2.map((company) => {
         return (
             
-            <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative lg:w-[160px] w-[120px] h-[auto] justify-center flex hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image src={company} alt="" />
             </div>
         )
@@ -38,7 +38,7 @@ export default function Partners() {
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 lg:px-20 lg:mb-20 items-center">
                         {companyList}
                     </div>
-                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 lg:px-36 items-center'>
+                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 justify-center lg:gap-x-10 lg:px-36 items-center'>
                         {companyList2}
                     </div>
                 </div>

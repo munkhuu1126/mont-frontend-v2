@@ -10,7 +10,7 @@ export default function Navbar() {
             <div className="container mx-auto lg:px-0 px-4">
                 <div className="flex justify-between  text-xl py-4">
                     <div className="flex w-[120px] h-[30px]">
-                        <Image src={mont} alt="" width={120} height={30} layout="fixed"/>
+                        <Image src={mont} alt="" width={160} height={40} layout="fixed"/>
 
                     </div>
                     <div className="lg:hidden flex">

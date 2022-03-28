@@ -1,6 +1,8 @@
 import React from 'react'
 import background from '../img/bg2.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 export default function Banner() {
     return (
@@ -18,7 +20,10 @@ export default function Banner() {
                     </p>
                     <div className="flex justify-center mt-5">
                         <button className="rounded-lg border-white border hover:text-black hover:bg-white transition ease-in duration-100 p-2 mx-auto">
+                            <Link href={'/proofoffunds'}>
                             See more
+                            </Link>
+                            
                         </button>
                     </div>
 

@@ -11,7 +11,7 @@ export default function IntroClickableCard() {
                     <i className="bi bi-arrow-right  text-lg"></i>
                 </div>
             </div>
-            <p className={`group-hover:text-white text-black text-2xl`}>
+            <p className={`group-hover:text-white text-black text-xl`}>
                 MONT reserves are held in banks, meaning that user funds are alawys kept safe and available for redemption.
             </p>
         </div>

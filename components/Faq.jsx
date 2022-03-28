@@ -48,6 +48,50 @@ export default function Faq() {
         },
 
     ]
+    const questions_mongolian = [
+        {
+            id: 1,
+            question: 'StableCoin гэж юу вэ?',
+            answer: 'Stablecoin нь доллар болон алт гэх мэт гадаад үнэ ханштай харьцуулан үнэ цэнийг тэнцвэржүүлэхэд шууд холбоотой криптовальютын нэг төрөл юм.'
+
+        },
+        {
+            id: 2,
+            question: 'MONT гэж юу вэ?',
+            answer: 'MONT нь бэхжүүлсэн/тэнцвэржүүлсэн Монгол төгрөгийн stablecoin юм.'
+
+        },
+        {
+            id: 3,
+            question: 'Аль блокчейны платформ дээр MONT байгаа вэ?',
+            answer: 'Currently MONT is available on Binance Smart Chain and Ethereum blockchain networks. Soon it will be available on Solana and Cardano.'
+
+        },
+        {
+            id: 4,
+            question: 'How much is MONT worth?',
+            answer: 'Since MONT is pegged to Mongolian Tugrik it will always have a 1:1 ratio of worth meaning each MONT will have equal value of MNT bank reserves.'
+
+        },
+        {
+            id: 5,
+            question: 'How can I buy MONT?',
+            answer: 'You can buy MONT through crypto exchanges. We are working tirelessly to list MONT on all major crypto exchanges in Mongolia. International listing will begin from 2022.'
+
+        },
+        {
+            id: 6,
+            question: 'How can I transfer MONT?',
+            answer: 'You can transfer MONT via your wallet on the crypto exchanges. Always check if you’re using the correct network for the transfer to prevent loss of funds. (BEP, ERC, etc.)'
+
+        },
+        {
+            id: 7,
+            question: 'Why MONT?',
+            answer: 'MONT is the safest stablecoin for Mongolian users when it comes to crypto trading. MONT smart contract was audited by international blockchain audit company Certik to certify the stability and security of the stablecoin. For more information, please view our Whitepaper.'
+
+        },
+    ]
 
     const accordians = questions.map(question => {
         return (
