@@ -3,6 +3,7 @@ import mont from '../img/logo.svg'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import { Transition } from '@headlessui/react'
+import Link from 'next/link'
 
 export default function Navbar() {
     const [menu, setMenu] = useState(false)
@@ -10,8 +11,10 @@ export default function Navbar() {
         <div className=" bg-black relative text-white">
             <div className="container mx-auto lg:px-0 px-4">
                 <div className="flex justify-between  text-xl py-4">
-                    <div className="flex w-[120px] items-center h-[30px]">
+                    <div className="flex w-[120px] cursor-pointer items-center h-[30px]">
+                        <Link href='/' passHref>
                         <Image src={mont} alt="" width={160} height={40} layout="fixed" />
+                        </Link>
 
                     </div>
                     <div className="lg:hidden flex">

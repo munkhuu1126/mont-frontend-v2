@@ -14,7 +14,7 @@
   background-position: center;
 }
 @media screen and (max-width: 800px) {
-  body{
+  .home-background{
     background-position: 65% 0%;
   }
 }
