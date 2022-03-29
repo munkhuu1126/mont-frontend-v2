@@ -7,7 +7,7 @@ export default function MarketCap() {
         <div className="lg:flex container mx-auto">
             <div className="bg-blue-500  rounded-tl-xl lg:rounded-bl-xl rounded-tr-xl lg:rounded-tr-none  w-full lg:flex justify-between items-center p-10 mt-32">
                 <div className="lg:flex">
-                <div className="-translate-x-4 lg:translate-x-0 lg:mb-0 mb-2 ">
+                <div className="-translate-x-4 lg:translate-x-0 items-center flex lg:mb-0 mb-2 ">
                     <Image  src={mont} alt="" />
                     </div>
                     <div className="lg:ml-10 ">
