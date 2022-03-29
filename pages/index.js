@@ -24,9 +24,9 @@ function App() {
     
       <Intro />
       <div className='grid lg:grid-cols-3 lg:px-0 px-4 gap-3 mt-10 container mx-auto'>
-        <ExplanationCard icon='bi bi-coin' paragraph="Use a stablecoin with the longest proven track record of liquidity and redeemability" />
-        <ExplanationCard icon='bi bi-globe' paragraph="Attract more global users and trading volume through international fiat markets with TrueCurrencies" />
-        <ExplanationCard icon='bi bi-safe' paragraph="Store and move your money quickly and without fees, or use TrueCurrencies with our partners to buy goods and services" />
+        <ExplanationCard icon='bi bi-coin' paragraph="explanation1" />
+        <ExplanationCard icon='bi bi-globe' paragraph="explanation2" />
+        <ExplanationCard icon='bi bi-safe' paragraph="explanation3" />
       </div>
       <div className='px-4 lg:px-0'>
         <MarketCap />

@@ -4,6 +4,7 @@ import discord from '../img/discord.webp'
 import telegram from '../img/telegram.png'
 import github from '../img/github.png'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 export default function Community() {
     const images = [
@@ -32,13 +33,14 @@ export default function Community() {
             color: '#000000'
         }
     ]
+    const {t} = useTranslation()
 
     return (
         <div className="container mx-auto lg:px-0 px-4 ">
-            <h1 className="font-bold text-3xl text-blue-500 text-center">Community</h1>
+            <h1 className="font-bold text-3xl text-blue-500 text-center">{t('community')}</h1>
             <div className='text-center bg-[#ecf0f1] mt-5 lg:p-32  rounded-xl mb-10'>
-                <h1 className="font-bold p-5 lg:p-0 text-xl">Join The Community</h1>
-                <p className="px-20">Learn more about Maker, chat with the team, others in the community, and have your say in shaping the future of decentralized finance.</p>
+                <h1 className="font-bold p-5 lg:p-0 text-xl">{t('join_the_community')}</h1>
+                <p className="px-20">{t('community_text')}</p>
                 <div className="lg:flex grid grid-cols-2 items-center justify-evenly mt-10">
                     {
                         images.map(image => {
