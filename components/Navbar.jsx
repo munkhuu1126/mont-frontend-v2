@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className=" bg-black relative text-white">
             <div className="container mx-auto lg:px-0 px-4">
                 <div className="flex justify-between  text-xl py-4">
-                    <div className="flex w-[120px] h-[30px]">
+                    <div className="flex w-[120px] items-center h-[30px]">
                         <Image src={mont} alt="" width={160} height={40} layout="fixed"/>
 
                     </div>
