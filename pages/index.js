@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Community from '../components/Community';
 import ExplanationCard from '../components/ExplanationCard';
 import Faq from '../components/Faq';
+import Link from 'next/link';
 
 import Intro from '../components/Intro';
 import MarketCap from '../components/MarketCap';
@@ -23,29 +24,33 @@ function App() {
       
     
       <Intro />
-      <div className='grid lg:grid-cols-3 lg:px-0 px-4 gap-3 mt-10 container mx-auto'>
+      <div className='grid md:grid-cols-3 md:px-0 px-4 gap-3 mt-10 container mx-auto'>
         <ExplanationCard icon='bi bi-coin' paragraph="explanation1" />
         <ExplanationCard icon='bi bi-globe' paragraph="explanation2" />
         <ExplanationCard icon='bi bi-safe' paragraph="explanation3" />
       </div>
-      <div className='px-4 lg:px-0'>
+      <div className='px-4 md:px-0'>
         <MarketCap />
       </div>
       <div>
         <Banner />
       </div>
-      <div className='px-4 lg:px-0'>
+      <div className='px-4 md:px-0'>
         <Partners />
       </div>
       <h1 className="font-bold text-3xl text-blue-500 text-center mb-5">News</h1>
 
-      <div className='container mx-auto grid lg:grid-cols-3 lg:px-0 px-4 gap-x-1 gap-y-5 lg:gap-y-0'>
+      <div className='container mx-auto grid md:grid-cols-3 md:px-0 px-4 gap-x-1 gap-y-5 md:gap-y-0'>
         <News image={news1} header='MONT Ард аппликейшндээр нэвтэрлээ.' date='March 18, 2022' />
         <News image={news2} header='EXCLUSIVE: Sifu Speaks! Ousted Wonderland Co-Founder Unveils New Venture and Defends His Record' date='March 18, 2022' />
         <News image={news3} header="Proposal Aims to Shake up MakerDAO's Tokenomics and Light a Fire Under MKR" date='March 18, 2022' />
       </div>
       <div className='flex container mx-auto justify-end lg:px-0 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
-        <button className=''>See all</button>
+        <button className=''>
+          <Link href='/news'>
+          See all
+          </Link>
+          </button>
         <i className="bi bi-arrow-right "></i>
       </div>
 

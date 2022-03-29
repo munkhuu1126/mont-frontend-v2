@@ -11,7 +11,7 @@ export default function Footer() {
                 <Image src={mont} width='128px' height='128px' alt="" />
                 <div className="lg:grid grid-cols-2 gap-x-10">
                     <ul>
-                        <h1 className="text-white font-bold">{t('products')}</h1>
+                        <h1 className="text-white font-bold">{t('products_')}</h1>
                         {
                             ['Benefit', 'Service', 'Project Team', 'Partners', 'FAQ'].map(list => {
                                 return (
@@ -21,7 +21,7 @@ export default function Footer() {
                         }
                     </ul>
                     <ul>
-                        <h1 className="text-white font-bold">{t('partners')}</h1>
+                        <h1 className="text-white font-bold">{t('partners_')}</h1>
                         {
                             ['GrapeCity Mongolia LLC', 'Diverse Solutions LLC', 'Ard Financial Group', 'Dax.mn', 'Complex.mn', 'Trade.mn', 'Tenger League Media group'].map(list => {
                                 return (

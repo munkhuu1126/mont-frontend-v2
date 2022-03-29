@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function News({image,header,date}) {
     return (
-        <div className="w-full">
+        <div className="w-full rounded-md">
             <div className="rounded overflow-hidden shadow-lg">
                 <div className="relative w-full h-60">
                     <Image src={image} layout='fill' objectFit="cover" alt='' />

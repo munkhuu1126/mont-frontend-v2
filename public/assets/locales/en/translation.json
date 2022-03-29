@@ -22,8 +22,8 @@
     "explanation1":"Use a stablecoin with the longest proven track record of liquidity and redeemability",
     "explanation2":"Attract more global users and trading volume through international fiat markets with TrueCurrencies",
     "explanation3":"Store and move your money quickly and without fees, or use TrueCurrencies with our partners to buy goods and services",
-    "products":"Products",
-    "partners":"Partners",
+    "products_":"Products",
+    "partners_":"Partners",
     "first_stable_coin": "Mongolia's First Stablecoin",
     "first_stable_coin_text":"Some representative placeholder content for the first slide",
     "intro1":"Redeemable one-to-one",
@@ -31,6 +31,7 @@
     "intro2":"Fully reserved",
     "intro2_text":"MONT reserves are held in banks, meaning that user funds are always kept safe and available for redemption.",
     "intro2_pof":"Proof of funds",
-    "":""
+    "news_":"News",
+    "layout_":"Layout"
 
 }

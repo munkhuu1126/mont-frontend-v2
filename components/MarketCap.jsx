@@ -1,27 +1,33 @@
 import React from 'react'
 import mont from '../img/mont.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MarketCap() {
     return (
-        <div className="lg:flex container mx-auto">
-            <div className="bg-blue-500  rounded-tl-xl lg:rounded-bl-xl rounded-tr-xl lg:rounded-tr-none  w-full lg:flex justify-between items-center p-10 mt-32">
-                <div className="lg:flex">
-                <div className="-translate-x-4 lg:translate-x-0 items-center flex lg:mb-0 mb-2 ">
-                    <Image  src={mont} alt="" />
+        <div className="md:flex container mx-auto">
+            <div className="bg-blue-500  rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none  w-full md:flex justify-between items-center p-10 mt-32">
+                <div className="md:flex">
+                    <div className="-translate-x-4 md:translate-x-0 items-center flex md:mb-0 mb-2 ">
+                        <Image src={mont} alt="" />
                     </div>
-                    <div className="lg:ml-10 ">
+                    <div className="md:ml-10 ">
                         <h1 className="text-[#f5f0f0]">MarketCap</h1>
-                        <p className="text-white text-2xl mt-4">1,458,657 MNT</p>
+                        <p className="text-white lg:text-2xl text-md mt-4">1,458,657 MNT</p>
                         <h1 className="text-[#f5f0f0] mt-4">Token Address</h1>
-                        <p className="text-white lg:text-2xl text-sm mt-4">0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4</p>
+                        <button className="text-white lg:text-2xl md:text-md text-sm mt-4">
+                            0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4
+                        </button>
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-700 lg:rounded-tr-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none   flex items-center  p-10 lg:mt-32">
-                <div className="lg:mr-10 text-white">
+            <div className="bg-blue-700 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none   flex items-center  p-10 md:mt-32">
+                <div className="md:mr-10 text-white">
                     <div className="flex mb-2">
-                        <a href="#" className="mr-2 hover:text-blue-300 transition duration-100 ease-in">BSCScan </a>
+                        <a href="https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4"
+                            className="mr-2 hover:text-blue-300 transition duration-100 ease-in">
+                            BSCScan
+                        </a>
                         <i className="bi bi-box-arrow-up-right"></i>
                     </div>
                     <div className="flex mb-2">
@@ -29,7 +35,7 @@ export default function MarketCap() {
                         <i className="bi bi-box-arrow-up-right"></i>
                     </div>
                     <div className="flex">
-                        <a href="#" className="mr-2 hover:text-blue-300 transition duration-100 ease-in">Krypto.mn </a>
+                        <a href="https://krypto.mn/currencies/mongol-tether" className="mr-2 hover:text-blue-300 transition duration-100 ease-in">Krypto.mn </a>
                         <i className="bi bi-box-arrow-up-right"></i>
 
                     </div>

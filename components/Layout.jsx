@@ -5,11 +5,13 @@ import Footer from './Footer'
 export default function Layout({ children }) {
     return (
         <>
-            <Navbar />
-            <main>
-                {children}
-            </main>
-            <Footer />
+            <div className="flex flex-col justify-between h-screen">
+                <Navbar />
+                <main>
+                    {children}
+                </main>
+                <Footer />
+            </div>
 
         </>
     )

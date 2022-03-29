@@ -25,7 +25,7 @@ export default function Partners() {
     const companyList2 = companies2.map((company) => {
         return (
             
-            <div key={nanoid()} className="mx-auto relative lg:w-[160px] w-[120px] h-[auto] justify-center flex hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative md:w-[160px] w-[120px] h-[auto] justify-center flex hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image src={company} alt="" />
             </div>
         )
@@ -33,12 +33,12 @@ export default function Partners() {
     return (
         <div className='container mx-auto my-20'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
-            <div className="px-10 py-20 lg:py-32 rounded-xl bg-[#ecf0f1]">
-                <div className="lg:block grid grid-cols-2 gap-x-10">
-                    <div className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 lg:px-20 lg:mb-20 items-center">
+            <div className="px-10 py-20 md:py-32 rounded-xl bg-[#ecf0f1]">
+                <div className="md:block grid grid-cols-2 gap-x-10">
+                    <div className="grid md:grid-cols-5 grid-cols-1 gap-y-10 md:gap-y-0 md:gap-x-10 lg:px-20 md:mb-20 items-center">
                         {companyList}
                     </div>
-                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 justify-center lg:gap-x-10 lg:px-36 items-center'>
+                    <div className='grid md:grid-cols-4 grid-cols-1 gap-y-10 md:gap-y-0 justify-center md:gap-x-10 lg:px-36 items-center'>
                         {companyList2}
                     </div>
                 </div>
