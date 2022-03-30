@@ -11,7 +11,7 @@ function GraphCMSImageLoader({ src}) {
 export default function NewsCard({ title, card_desc, image, slug, width, height }) {
     const router = useRouter()
     return (
-        <button className={`${width} text-left rounded-md`}  onClick={()=>{router.push(`/news/${slug}`)}}>
+        <div className={`${width} text-left rounded-md cursor-pointer`}  onClick={()=>{router.push(`/news/${slug}`)}}>
             <div className=" overflow-hidden rounded-lg">
                 <div className={`relative w-full ${height} `}>
                     <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-2xl" />
@@ -27,6 +27,6 @@ export default function NewsCard({ title, card_desc, image, slug, width, height 
 
             </div>
 
-        </button>
+        </div>
     )
 }
