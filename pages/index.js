@@ -5,7 +5,7 @@ import Community from '../components/Community';
 import ExplanationCard from '../components/ExplanationCard';
 import Faq from '../components/Faq';
 import Link from 'next/link';
-
+import axios from 'axios'
 import Intro from '../components/Intro';
 import MarketCap from '../components/MarketCap';
 import News from '../components/News';
@@ -14,8 +14,10 @@ import news1 from '../img/news1.png'
 import news2 from '../img/news2.jpg'
 import news3 from '../img/news3.png'
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 function App() {
+  const router = useRouter()
   return (
     <div className="App home-background">
       <Head>
@@ -46,10 +48,10 @@ function App() {
         <News image={news3} header="Proposal Aims to Shake up MakerDAO's Tokenomics and Light a Fire Under MKR" date='March 18, 2022' />
       </div>
       <div className='flex container mx-auto justify-end lg:px-0 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
-        <button className=''>
-          <Link href='/news'>
+        <button className='' onClick={()=>{router.push('/news')}}>
+          
           See all
-          </Link>
+      
           </button>
         <i className="bi bi-arrow-right "></i>
       </div>
@@ -63,5 +65,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

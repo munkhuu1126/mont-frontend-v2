@@ -23,3 +23,25 @@ body{
   background-color:#f5f9fb;
   font-family: 'Roboto', sans-serif;
 }
+
+.first{
+  background-image: url('../img/mont 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.second{
+  background-image: url('../img/mont 2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.third{
+  background-image: url('../img/mont 3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fourth{
+  background-image: url('../img/mont 4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
