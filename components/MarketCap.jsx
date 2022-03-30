@@ -2,8 +2,20 @@ import React from 'react'
 import mont from '../img/mont.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import Swal from 'sweetalert2'
+import {BiCopy} from 'react-icons/bi'
 
 export default function MarketCap() {
+    const copy = ()=>{
+        navigator.clipboard.writeText('0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4')
+        Swal.fire({
+            position: 'center',
+            title: 'Successfully copied the token address!',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        
+    }
     return (
         <div className="md:flex container mx-auto">
             <div className="bg-blue-500  rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none  w-full md:flex justify-between items-center p-10 mt-32">
@@ -15,9 +27,13 @@ export default function MarketCap() {
                         <h1 className="text-[#f5f0f0]">MarketCap</h1>
                         <p className="text-white lg:text-2xl text-md mt-4">1,458,657 MNT</p>
                         <h1 className="text-[#f5f0f0] mt-4">Token Address</h1>
-                        <button className="text-white lg:text-2xl md:text-md text-sm mt-4">
-                            0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4
+                        <button 
+                        className="text-white lg:text-2xl md:text-md flex items-center text-sm lg:no-underline underline lg:hover:underline mt-4" 
+                        onClick={() => copy()}
+                        >
+                            0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4 <BiCopy/>
                         </button>
+                        
                     </div>
                 </div>
             </div>
