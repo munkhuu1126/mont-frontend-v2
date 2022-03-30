@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Header from '../../components/News/Header'
 import NewsCard from '../../components/News/NewsCard'
@@ -7,7 +7,9 @@ import axios from 'axios'
 
 
 
+
 export default function news({ data }) {
+    
 
     const newsContent = data.data.map(newsData => {
         return (

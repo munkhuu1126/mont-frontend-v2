@@ -14,7 +14,7 @@ export default function ProofOfFunds() {
                 <title>Proof of Funds</title>
             </Head>
             <div className="container mx-auto px-4 md:px-0">
-                <h1 className="text-blue-500 text-2xl my-3 font-bold">
+                <h1 className="text-blue-700 text-2xl my-3 font-bold">
                     Proof of Funds
                 </h1>
 
@@ -25,9 +25,9 @@ export default function ProofOfFunds() {
                     <Cards year={`${tabYear} IV`} circulatingfee={2123123123123} reservefee={42342342} cardbg= {'fourth'} />
                 </div>
                 <div className="text-white space-x-10">
-                    <button className="rounded-lg bg-blue-500 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2022) }}>2022</button>
-                    <button className="rounded-lg bg-blue-500 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2023) }}>2023</button>
-                    <button className="rounded-lg bg-blue-500 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2024) }}>2024</button>
+                    <button className="rounded-lg bg-blue-700 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2022) }}>2022</button>
+                    <button className="rounded-lg bg-blue-700 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2023) }}>2023</button>
+                    <button className="rounded-lg bg-blue-700 hover:scale-110 transition ease-in duration-100 p-2 mx-auto" onClick={() => { changeTab(2024) }}>2024</button>
                 </div>
             </div>
 
