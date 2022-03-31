@@ -1,6 +1,4 @@
 import React from 'react'
-import background from '../img/bg2.jpg'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
 

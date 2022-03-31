@@ -8,19 +8,19 @@ function GraphCMSImageLoader({ src}) {
     return `http://localhost:8055/assets/${src}`;
 }
 
-export default function NewsCard({ title, card_desc, image, slug, width, height }) {
+export default function NewsCard({ title, image, slug, width, height, shadow }) {
     const router = useRouter()
     return (
-        <div className={`${width} text-left rounded-md cursor-pointer`}  onClick={()=>{router.push(`/news/${slug}`)}}>
+        <div className={`${width} border rounded-lg ${shadow} hover:scale-110 transition duration-200 ease-in text-left cursor-pointer`}  onClick={()=>{router.push(`/news/${slug}`)}}>
             <div className=" overflow-hidden rounded-lg">
                 <div className={`relative w-full ${height} `}>
-                    <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-2xl" />
+                    <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-t-lg" />
                 </div>
-                <div className="block py-6 px-2">
+                <div className="block py-4 space-y-2 px-6">
         
 
-                    <h1 className="line-clamp-2 text-blue-500 text-lg h-14 overflow-hidden">{title}</h1>
-                    <div className="prose text-sm line-clamp-2 h-5 text-[#646464]">{parse(card_desc)}</div>
+                    <h1 className="line-clamp-2 mb-20 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
+                    <div className="prose text-md font-bold line-clamp-2 h-5 text-[#646464]">Read More</div>
                 
 
                 </div>

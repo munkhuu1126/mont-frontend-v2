@@ -20,20 +20,22 @@ export default function news({ data }) {
                     image={newsData.main_image}
                     card_desc={newsData.card_desc}
                     slug={newsData.id}
-                    width={'max-w-xs'}
-                    height={'h-40'} />
+                    width={'w-full'}
+                    height={'h-48'}
+                    shadow={'shadow-lg'} />
 
             </div>
         )
     })
+
 
     return (
         <div>
             <Head>
                 <title>News</title>
             </Head>
-            <Header data={data} />
-            <div className="container mx-auto lg:px-32 gap-y-5 px-12 lg:gap-x-10 gap-x-5 grid md:grid-cols-3 my-10 ">
+            <Header latestNews={data.data[0]}  />
+            <div className="container mx-auto lg:px-[5rem] xl:px-[8rem] 2xl:px-[10rem] gap-y-5 px-20 md:px-24 lg:gap-x-6 gap-x-5 grid md:grid-cols-2 lg:grid-cols-3 my-10 ">
                 {
                     newsContent
                 }

@@ -7,7 +7,7 @@ export default function IntroClickableCard() {
 
     return (
         <Link href={'/proofoffunds'} passHref>
-            <div className={`group bg-white hover:bg-blue-500 hover:scale-110 lg:w-1/2 transition ease-out duration-700 p-10 cursor-pointer`}>
+            <div className={`group bg-white hover:bg-blue-500 hover:scale-110 lg:w-1/2 transition ease-out duration-300 p-10 cursor-pointer`}>
 
                 <div className="flex justify-between items-start">
                     <h1 className={`group-hover:text-white text-blue-500 text-3xl mb-4 font-bold`}>{t('intro2')}</h1>

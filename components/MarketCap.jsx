@@ -25,10 +25,10 @@ export default function MarketCap() {
                     </div>
                     <div className="md:ml-10 ">
                         <h1 className="text-[#f5f0f0]">MarketCap</h1>
-                        <p className="text-white lg:text-2xl text-md mt-4">1,458,657 MNT</p>
+                        <p className="text-white lg:text-2xl text-md mt-1">1,458,657 MNT</p>
                         <h1 className="text-[#f5f0f0] mt-4">Token Address</h1>
                         <button 
-                        className="text-white lg:text-2xl md:text-md flex items-center text-sm lg:no-underline underline lg:hover:underline mt-4" 
+                        className="text-white lg:text-2xl md:text-md flex items-center text-sm lg:no-underline underline lg:hover:underline mt-1" 
                         onClick={() => copy()}
                         >
                             0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4 <BiCopy/>

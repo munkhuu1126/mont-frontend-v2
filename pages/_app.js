@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
-import LanguageBar from '../components/LanguageBar'
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector'
@@ -33,7 +32,6 @@ i18n
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <LanguageBar />
       <Layout>
         <Component {...pageProps} />
       </Layout>

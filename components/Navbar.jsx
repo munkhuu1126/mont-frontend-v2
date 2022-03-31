@@ -1,36 +1,54 @@
-import React, { useState } from 'react'
-import mont from '../img/logo.svg'
+import React, { useState, useEffect } from 'react'
+import i18next from 'i18next'
+import mont from '../img/mont-logo.png'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Navbar() {
+    const [language, setLanguage] = useState(false)
+    const changeLanguage = () => {
+        let temp = !language
+        setLanguage(temp)
+        temp ? i18next.changeLanguage('mn') : i18next.changeLanguage('en')
+    }
+
+
+
+    useEffect(() => {
+        console.log(i18next.language);
+    }, [language])
     const [menu, setMenu] = useState(false)
     const router = useRouter()
     return (
         <div className=" bg-black relative text-white">
             <div className="container mx-auto lg:px-0 px-4">
-                <div className="flex justify-between  text-xl py-4">
-                    <div className="flex w-[120px] cursor-pointer items-center h-[30px]" onClick={() => { router.push('/') }}>
+                <div className="flex justify-between items-center py-4">
+                    <div className="space-x-5 flex items-center">
+                        <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
 
-                        <Image src={mont} alt="" width={160} height={40} layout="fixed" />
+                            <Image src={mont} alt="" width={40} height={40} layout="fixed" />
 
 
+                        </div>
+
+                        
+
+
+                        {/* desktop menu */}
+                        <div className="lg:flex hidden space-x-5">
+                            <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>About</button>
+                            <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
+                            <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>News</button>
+                        </div>
                     </div>
-                    <div className="lg:hidden flex">
-                        <button onClick={() => { setMenu(!menu) }} className=" p-1 rounded-lg">
+                    <div className=" px-4 lg:flex hidden lg:px-0 items-center">
+                        <button className="text-white hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => changeLanguage()}>{language ? 'EN' : 'MN'}</button>
+                    </div>
+                    <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
                             <AiOutlineMenu />
-                        </button>
-
-                    </div>
-                    {/* desktop menu */}
-                    <div className={`hidden lg:flex items-center space-x-5`}>
-                        <button className='hover:text-blue-500 transition ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
-                        <button className='hover:text-blue-500 transition ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
-                        <button className='hover:text-blue-500 transition ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>
-                    </div>
+                    </button>
 
                 </div>
                 {/* mobile menu */}
