@@ -11,12 +11,12 @@ export default function Post({data}) {
     return `https://news.stablecoin.mn/assets/${src}`;
   } 
   return (
-    <div className = "container mx-auto lg:px-0 px-4 prose prose-img:rounded-xl prose-p:text-lg hover:prose-a:text-red-500 prose-slate my-10">
+    <div className = "container mx-auto lg:px-0 px-8 prose prose-img:rounded-xl prose-p:text-lg hover:prose-a:text-red-500 prose-slate my-10">
       <Head>
         <title>{currentContent.title}</title>
       </Head>
       <h1 className="font-bold break-words text-4xl">{currentContent.title}</h1>
-      <div className="relative w-full h-[360px]">
+      <div className="relative w-auto h-[160px] md:w-full md:h-[360px]">
         <Image loader={GraphCMSImageLoader} src={currentContent.main_image} layout="fill" objectFit="cover" alt='' className="rounded-lg"/>
       </div>
         <div className="my-10">{parser(currentContent.content)}</div>
