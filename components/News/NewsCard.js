@@ -11,7 +11,7 @@ function GraphCMSImageLoader({ src}) {
 export default function NewsCard({ title, image, slug, width, height, shadow }) {
     const router = useRouter()
     return (
-        <div className={`${width} border rounded-lg ${shadow} hover:scale-110 transition duration-200 ease-in text-left cursor-pointer`}  onClick={()=>{router.push(`/news/${slug}`)}}>
+        <div className={`${width} border rounded-lg ${shadow} hover:shadow-2xl hover:scale-110 transition duration-200 ease-in text-left cursor-pointer`}  onClick={()=>{router.push(`/news/${slug}`)}}>
             <div className=" overflow-hidden rounded-lg">
                 <div className={`relative w-full ${height} `}>
                     <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-t-lg" />
