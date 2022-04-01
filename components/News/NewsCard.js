@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 function GraphCMSImageLoader({ src}) {
 
-    return `http://localhost:8055/assets/${src}`;
+    return `https://news.stablecoin.mn/assets/${src}`;
 }
 
 export default function NewsCard({ title, image, slug, width, height, shadow }) {

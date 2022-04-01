@@ -8,7 +8,7 @@ export default function Post({data}) {
   const currentContent = data.data
   function GraphCMSImageLoader({src}) {
 
-    return `http://localhost:8055/assets/${src}`;
+    return `https://news.stablecoin.mn/assets/${src}`;
   } 
   return (
     <div className = "container mx-auto lg:px-0 px-4 prose prose-img:rounded-xl prose-p:text-lg hover:prose-a:text-red-500 prose-slate my-10">
@@ -25,7 +25,7 @@ export default function Post({data}) {
   )
 }
 export async function getStaticPaths(){
-    const res = await axios.get('http://localhost:8055/items/News')
+    const res = await axios.get('https://news.stablecoin.mn/Items/News')
     const data = await res.data.data
 
     const paths =  await data.map((i)=>{
@@ -43,7 +43,7 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({params}){
-  const res = await axios.get(`http://localhost:8055/items/News/${params.id}`)
+  const res = await axios.get(`https://news.stablecoin.mn/Items/News${params.id}`)
   const data = await res.data
 
   return {

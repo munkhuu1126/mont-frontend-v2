@@ -14,7 +14,7 @@ export default function Header({ latestNews }) {
 
     function GraphCMSImageLoader({ src }) {
 
-        return `http://localhost:8055/assets/${src}`;
+        return `https://news.stablecoin.mn/assets/${src}`;
     }
 
     return (

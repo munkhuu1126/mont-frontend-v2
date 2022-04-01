@@ -137,7 +137,7 @@ export default App;
 
 
 export async function getServerSideProps() {
-  const res = await axios.get('http://localhost:8055/items/News?sort=sort,-date_created')
+  const res = await axios.get('https://news.stablecoin.mn/Items/News?sort=sort,-date_created')
   const data = await res.data
 
   return {
