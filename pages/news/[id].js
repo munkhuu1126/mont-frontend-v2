@@ -43,7 +43,7 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({params}){
-  const res = await axios.get(`https://news.stablecoin.mn/Items/News${params.id}`)
+  const res = await axios.get(`https://news.stablecoin.mn/Items/News/${params.id}`)
   const data = await res.data
 
   return {
