@@ -35,7 +35,7 @@ export default function news({ data }) {
                 <title>News</title>
             </Head>
             <Header latestNews={data.data[0]}  />
-            <div className="container mx-auto lg:px-[5rem] xl:px-[8rem] 2xl:px-[10rem] gap-y-5 px-20 md:px-24 lg:gap-x-6 gap-x-5 grid md:grid-cols-2 lg:grid-cols-3 my-10 ">
+            <div className="container mx-auto lg:px-[5rem] xl:px-[8rem] 2xl:px-[10rem] gap-y-5 px-10 md:px-24 lg:gap-x-6 gap-x-5 grid md:grid-cols-2 lg:grid-cols-3 my-10 ">
                 {
                     newsContent
                 }
