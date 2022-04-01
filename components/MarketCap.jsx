@@ -18,7 +18,7 @@ export default function MarketCap() {
     }
     return (
         <div className="md:flex container mx-auto">
-            <div className="bg-blue-500  rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none  w-full md:flex justify-between items-center p-10 mt-32">
+            <div className="bg-blue-500  rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none  w-full md:flex justify-between items-center p-10 mt-20">
                 <div className="md:flex">
                     <div className="-translate-x-4 md:translate-x-0 items-center flex md:mb-0 mb-2 ">
                         <Image src={mont} alt="" />
@@ -37,7 +37,7 @@ export default function MarketCap() {
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-700 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none   flex items-center  p-10 md:mt-32">
+            <div className="bg-blue-700 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none flex items-center  p-10 md:mt-20">
                 <div className="md:mr-10 text-white">
                     <div className="flex mb-2">
                         <a href="https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4"

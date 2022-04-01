@@ -41,7 +41,7 @@ export default function Partners() {
     })
     
     return (
-        <div className='container mx-auto my-20'>
+        <div className='container mx-auto my-5'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
             <div className="px-10 py-20 md:py-32 rounded-xl">
                 <div className="lg:block grid grid-cols-2 gap-x-10">
