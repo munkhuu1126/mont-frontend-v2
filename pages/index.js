@@ -101,7 +101,7 @@ function App({ data }) {
       </div>
       <h1 className="font-bold text-3xl text-blue-500 text-center mb-5">News</h1>
 
-      <div className='container mx-auto hidden lg:grid grid-cols-3 xl:px-32 lg:28 gap-x-12 gap-y-5 lg:gap-y-0'>
+      <div className='container mx-auto hidden lg:grid grid-cols-3 xl:px-32 gap-x-12 gap-y-5 lg:gap-y-0'>
         {newsContent}
       </div>
       <div className='container mx-auto lg:hidden md:grid hidden grid-cols-2 px-12 gap-x-12 gap-y-5 lg:gap-y-0'>
@@ -112,7 +112,7 @@ function App({ data }) {
           {newsContentsm}
         </Slider>
       </div>
-      <div className='flex container mx-auto justify-end lg:px-10 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
+      <div className='flex container mx-auto justify-end lg:px-0 xl:px-32 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
         <button className='' onClick={() => { router.push('/news') }}>
 
           See all
