@@ -112,14 +112,19 @@ function App({ data }) {
           {newsContentsm}
         </Slider>
       </div>
-      <div className='flex container mx-auto justify-end lg:px-0 xl:px-32 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
-        <button className='' onClick={() => { router.push('/news') }}>
+      <div className='flex justify-center  mt-6 mb-10'>
+        <div className="bg-[#5173ea] py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:scale-110 transition ease-in duration-100">
+        <button
+          className=' font-bold '
+          onClick={() => { router.push('/news') }}>
 
-          See all
+          See all 
 
         </button>
         <i className="bi bi-arrow-right "></i>
+        </div>
       </div>
+
 
       <div>
         <Community />
