@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="container mx-auto lg:px-0 px-4 rounded-xl my-5 bg-[#1a202c]">
             <div className=" p-10 md:flex lg:space-y-0 text-center space-y-5 justify-between items-center">
                 <Image src={mont} width='100px' height='100px' alt="" />
-                <div className="flex text-blue-500 justify-center text-4xl space-x-10 items-center">
+                <div className="flex md:translate-x-8 text-white justify-center text-4xl space-x-10 items-center">
                     <BsTwitter/>
                     <BsFacebook/>
                     <BsInstagram/>
                 </div>
                 
-                <h1 className="text-blue-500 font-bold text-xl">&copy; Diverse Solution LLC</h1>
+                <h1 className="text-white font-bold text-xl">&copy; Diverse Solution LLC</h1>
             </div>
 
         </div>
