@@ -85,12 +85,12 @@ function App({ data }) {
 
 
       <Intro />
-      <div className='grid md:grid-cols-3 md:px-0 px-4 gap-3 mt-10 container mx-auto'>
+      <div className='grid md:grid-cols-3 lg:px-10 px-4 gap-3 mt-10 container mx-auto'>
         <ExplanationCard icon='bi bi-coin' paragraph="explanation1" />
         <ExplanationCard icon='bi bi-globe' paragraph="explanation2" />
         <ExplanationCard icon='bi bi-safe' paragraph="explanation3" />
       </div>
-      <div className='px-4 md:px-0'>
+      <div className='px-4 lg:px-10'>
         <MarketCap />
       </div>
       <div>
@@ -112,7 +112,7 @@ function App({ data }) {
           {newsContentsm}
         </Slider>
       </div>
-      <div className='flex container mx-auto justify-end lg:px-0 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
+      <div className='flex container mx-auto justify-end lg:px-10 px-4 mt-4 mb-10 hover:text-blue-500 transition ease-in duration-100'>
         <button className='' onClick={() => { router.push('/news') }}>
 
           See all

@@ -10,9 +10,9 @@ export default function Layout({ children }) {
                 <main>
                     {children}
                 </main>
-
+                <div className="lg:px-10">
                 <Footer />
-
+                </div>
             </div>
 
         </>

@@ -23,7 +23,7 @@ export default function Navbar() {
     const router = useRouter()
     return (
         <div className=" bg-black relative text-white">
-            <div className="container mx-auto lg:px-0 px-4">
+            <div className="container mx-auto lg:px-10 px-4">
                 <div className="flex justify-between items-center py-4">
                     <div className="space-x-5 flex items-center">
                         <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
