@@ -14,7 +14,7 @@ export default function Banner() {
 
                 <div className="container mx-auto relative lg:px-0 py-20 px-4">
                     <h1 className="text-4xl font-bold text-center">{t('proof_of_funds')}</h1>
-                    <p className="mt-3 lg:px-72 lg:text-left text-justify">
+                    <p className="mt-3 lg:px-72 lg:text-left font-thin text-justify">
                         {t('proof_of_funds_text')}
                     </p>
                     <div className="flex justify-center mt-5">

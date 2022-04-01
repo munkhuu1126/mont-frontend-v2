@@ -7,7 +7,7 @@ import {BsTwitter, BsFacebook, BsInstagram} from 'react-icons/bs'
 export default function Footer() {
     const {t}=useTranslation()
     return (
-        <div className="container mx-auto lg:px-0 px-4 rounded-xl my-5 bg-[#1a202c]">
+        <div className="container mx-auto lg:px-0 px-4 rounded-xl my-5 bg-[#5173ea]">
             <div className=" p-10 md:flex lg:space-y-0 text-center space-y-5 justify-between items-center">
                 <Image src={mont} width='100px' height='100px' alt="" />
                 <div className="flex md:translate-x-8 text-white justify-center text-4xl space-x-10 items-center">

@@ -43,7 +43,7 @@ export default function Community() {
         <div className="container mx-auto lg:px-0 px-4 ">
             <div className='text-center mt-5 lg:p-20  rounded-xl mb-10'>
                 <h1 className="font-bold p-5 lg:p-0 text-3xl text-blue-500 mb-16">{t('join_the_community')}</h1>
-                <p className="px-20 mb-5 text-lg">{t('community_text')}</p>
+                <p className="px-20 mb-5 font-extralight text-lg">{t('community_text')}</p>
                 <div className="lg:flex lg:space-x-4 items-center justify-evenly mt-10">
                     {
                         icons.map(icon => {

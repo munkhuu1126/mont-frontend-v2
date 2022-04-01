@@ -16,7 +16,7 @@ export default function IntroClickableCard() {
                         <i className="bi bi-arrow-right  text-lg"></i>
                     </div>
                 </div>
-                <p className={`group-hover:text-white text-black text-xl`}>
+                <p className={`group-hover:text-white font-extralight text-black text-xl`}>
                     {t('intro2_text')}
 
                 </p>
