@@ -6,7 +6,6 @@
 .home-background{
   background-image: url('../img/header.gif');
   background-repeat: no-repeat;
-  background-color:#f5f9fb;
   background-position: top center;
 }
 .banner-background{
@@ -21,7 +20,7 @@
 }
 body{
   background-color:#f5f9fb;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .first{

@@ -12,6 +12,7 @@ import axios from 'axios';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Slider from 'react-slick';
+import header from '../img/header.gif'
 
 function App({ data }) {
   const router = useRouter()
@@ -77,7 +78,8 @@ function App({ data }) {
     )
   })
   return (
-    <div className="App home-background">
+    <div style={{ backgroundImage: `url("${header.src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center',  }} 
+    className="App home-background">
       <Head>
         <title>MONT About</title>
         <link rel="icon" href='/mont-logo.ico' />
