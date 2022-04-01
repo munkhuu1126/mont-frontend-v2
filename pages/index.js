@@ -112,7 +112,7 @@ function App({ data }) {
           {newsContentsm}
         </Slider>
       </div>
-      <div className='flex justify-center  mt-6 mb-10'>
+      <div className='flex justify-center  mt-10 mb-10'>
         <div className="bg-[#5173ea] py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:scale-110 transition ease-in duration-100">
         <button
           className=' font-bold '
