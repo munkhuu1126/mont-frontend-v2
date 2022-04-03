@@ -12,6 +12,7 @@ export default function ProofOfFunds() {
         <div className="text-white p-10 home-background">
             <Head>
                 <title>Proof of Funds</title>
+                <link rel="icon" href="/mont-logo.ico" />
             </Head>
             <div className="container mx-auto px-4 md:px-0">
                 <h1 className="text-blue-700 text-2xl my-3 font-bold">
