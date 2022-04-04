@@ -13,7 +13,7 @@ export default function Navbar() {
         let temp = !language
         setLanguage(temp)
         temp ? i18next.changeLanguage('mn') : i18next.changeLanguage('en')
-        
+
 
 
     }
@@ -21,13 +21,13 @@ export default function Navbar() {
 
 
     useEffect(() => {
-        
+
     }, [language])
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         i18next.language === 'en' ? setLanguage(false) : setLanguage(true)
     }, [])
-   
+
     const [menu, setMenu] = useState(false)
     const router = useRouter()
     return (
