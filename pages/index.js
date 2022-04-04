@@ -78,8 +78,8 @@ function App({ data }) {
     )
   })
   return (
-    <div style={{ backgroundImage: `url("${header.src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center',  }} 
-    className="App home-background">
+    <div style={{ backgroundImage: `url("${header.src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', }}
+      className="App home-background">
       <Head>
         <title>MONT About</title>
         <link rel="icon" href='/mont-logo.ico' />
@@ -116,14 +116,14 @@ function App({ data }) {
       </div>
       <div className='flex justify-center  mt-10 mb-10'>
         <div className="bg-[#5173ea] py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:scale-110 transition ease-in duration-100">
-        <button
-          className=' font-bold '
-          onClick={() => { router.push('/news') }}>
+          <button
+            className=' font-bold '
+            onClick={() => { router.push('/news') }}>
 
-          See all 
+            See all
 
-        </button>
-        <i className="bi bi-arrow-right "></i>
+          </button>
+          <i className="bi bi-arrow-right "></i>
         </div>
       </div>
 
