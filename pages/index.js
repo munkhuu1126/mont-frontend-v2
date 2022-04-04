@@ -27,7 +27,8 @@ function App({ data }) {
           slug={newsData.id}
           width={'w-full'}
           height={'h-52'}
-          shadow={'shadow-lg'} />
+          shadow={'shadow-lg'}
+          />
 
 
       </div>
@@ -71,7 +72,8 @@ function App({ data }) {
           slug={newsData.id}
           width={'w-full'}
           height={'h-52'}
-          shadow={'shadow-none'} />
+          shadow={'shadow-none'}
+         />
 
 
       </div>

@@ -6,19 +6,28 @@ import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 
+
 export default function Navbar() {
-    const [language, setLanguage] = useState(false)
+    const [language, setLanguage] = useState(i18next.language === 'en' ? true : false)
     const changeLanguage = () => {
         let temp = !language
         setLanguage(temp)
         temp ? i18next.changeLanguage('mn') : i18next.changeLanguage('en')
+        
+
+
     }
 
 
 
     useEffect(() => {
-        console.log(i18next.language);
+        
     }, [language])
+    
+    useEffect(()=>{
+        i18next.language === 'en' ? setLanguage(false) : setLanguage(true)
+    }, [])
+   
     const [menu, setMenu] = useState(false)
     const router = useRouter()
     return (
@@ -33,7 +42,7 @@ export default function Navbar() {
 
                         </div>
 
-                        
+
 
 
                         {/* desktop menu */}
@@ -47,7 +56,7 @@ export default function Navbar() {
                         <button className="text-white hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => changeLanguage()}>{language ? 'EN' : 'MN'}</button>
                     </div>
                     <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
-                            <AiOutlineMenu />
+                        <AiOutlineMenu />
                     </button>
 
                 </div>
