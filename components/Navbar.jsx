@@ -22,7 +22,7 @@ export default function Navbar() {
     const [menu, setMenu] = useState(false)
     const router = useRouter()
     return (
-        <div className=" bg-black sticky top-0 z-50 text-white">
+        <div className=" bg-black bg-opacity-90 sticky top-0 z-50 text-white">
             <div className="container mx-auto lg:px-10 px-4">
                 <div className="flex justify-between items-center py-4">
                     <div className="space-x-5 flex items-center">
@@ -67,7 +67,7 @@ export default function Navbar() {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform opacity-0"
             >
-                <div className={`lg:hidden bg-black w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
+                <div className={`lg:hidden bg-black bg-opacity-90 w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
                     <button className='hover:text-blue-500 block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
                     <button className='hover:text-blue-500 block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
                     <button className='hover:text-blue-500 block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>

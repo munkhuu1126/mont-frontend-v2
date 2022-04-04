@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
+
 
 export default function IntroClickableCard() {
     const { t } = useTranslation()
@@ -11,7 +12,7 @@ export default function IntroClickableCard() {
 
                 <div className="flex justify-between items-start">
                     <h1 className={`group-hover:text-white text-blue-500 text-3xl mb-4 font-bold`}>{t('intro2')}</h1>
-                    <div className='text-blue-500 group-hover:text-white flex'>
+                    <div className='text-blue-500 group-hover:text-white group-hover:tranaslate-x-10 flex' >
                         <p className="hidden group-hover:flex">{t('intro2_pof')}</p>
                         <i className="bi bi-arrow-right  text-lg"></i>
                     </div>
