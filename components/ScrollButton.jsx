@@ -25,7 +25,7 @@ export default function ScrollButton() {
     }, [top])
 
     return (
-        <button className={`${showTopBtn ? 'block' : 'hidden'} fixed bottom-4 right-4 text-blue-500 text-6xl animate-bounce hover:animate-none`} onClick={() => { setTop(true) }}>
+        <button className={`${showTopBtn ? 'block' : 'hidden'} fixed bottom-4 right-4 text-blue-500 bg-white rounded-full text-6xl animate-bounce hover:animate-none`} onClick={() => { setTop(true) }}>
             <FaChevronCircleUp />
         </button>
     )
