@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import parse from 'html-react-parser'
 import { useRouter } from 'next/router';
@@ -15,10 +15,6 @@ function GraphCMSImageLoader({ src }) {
 export default function NewsCard({ title, image, slug, width, height, shadow, mn_title }) {
 
     
-
-
-
-
     const router = useRouter()
     return (
         <div className={`${width} border rounded-lg ${shadow} hover:shadow-2xl hover:scale-110 transition duration-200 ease-in text-left cursor-pointer`} onClick={() => { router.push(`/news/${slug}`) }}>

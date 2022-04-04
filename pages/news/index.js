@@ -22,10 +22,7 @@ export default function news({ data }) {
                     slug={newsData.id}
                     width={'w-full'}
                     height={'h-48'}
-                    shadow={'shadow-lg'}
-                    mn_title = {newsData.mn_title}
-                    mn_content = {newsData.mn_content}
-                    mn_card_desc={newsData.mn_card_desc} />
+                    shadow={'shadow-lg'} />
 
             </div>
         )
