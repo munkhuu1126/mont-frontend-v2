@@ -53,7 +53,7 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className=" px-4 lg:flex hidden lg:px-0 items-center">
-                        <button className="text-white hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => changeLanguage()}>{language ? 'EN' : 'MN'}</button>
+                        <button className="text-white hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => {changeLanguage(); router.reload()}}>{language ? 'EN' : 'MN'}</button>
                     </div>
                     <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
                         <AiOutlineMenu />
