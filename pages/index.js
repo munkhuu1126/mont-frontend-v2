@@ -28,7 +28,7 @@ function App({ data }) {
           width={'w-full'}
           height={'h-52'}
           shadow={'shadow-lg'}
-          />
+        />
 
 
       </div>
@@ -73,7 +73,7 @@ function App({ data }) {
           width={'w-full'}
           height={'h-52'}
           shadow={'shadow-none'}
-         />
+        />
 
 
       </div>
@@ -117,10 +117,10 @@ function App({ data }) {
         </Slider>
       </div>
       <div className='flex justify-center  mt-10 mb-10'>
-        <div className="bg-[#5173ea] py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:scale-110 transition ease-in duration-100">
+        <div className="bg-[#5173ea] py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:shadow-xl transition ease-in duration-100 cursor-pointer" onClick={() => { router.push('/news') }}>
           <button
             className=' font-bold '
-            onClick={() => { router.push('/news') }}>
+          >
 
             See all
 

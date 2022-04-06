@@ -21,36 +21,37 @@ export default function Partners() {
 
 
     const companies = [dax, trade, idax, denode, corex,grape, diverse, ict, tenger]
-    const companyList = companies.slice(0,5).map((company) => {
+    const companyList = companies.map((company) => {
         return (
             
-            <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative lg:w-[120px] w-[160px] text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt=""/>
             </div>
         
         )
     })
-    const companyList2 = companies.slice(5,9).map((company) => {
-        return (
+    // const companyList2 = companies.slice(5,9).map((company) => {
+    //     return (
             
-            <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
-                <Image loader={GraphCMSImageLoader} src={company} alt=""/>
-            </div>
+    //         <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+    //             <Image loader={GraphCMSImageLoader} src={company} alt=""/>
+    //         </div>
         
-        )
-    })
+    //     )
+    // })
+    
     
     return (
         <div className='container mx-auto my-5'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
-            <div className="lg:px-10 px-4 py-20 md:py-32 rounded-xl">
-                <div className="lg:block grid grid-cols-2 gap-x-10">
-                    <div className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-y-0 md:gap-x-10 xl:px-20 lg:mb-20 items-center">
+            <div className="lg:px-10 px-4 py-20 md:py-10 rounded-xl">
+                <div className="lg:block grid grid-cols-1 gap-x-10">
+                    <div className="grid lg:grid-cols-9 gap-y-10 lg:gap-y-0 md:gap-x-10 items-center">
                         {companyList}
                     </div>
-                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:px-36 items-center'>
+                    {/* <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:px-36 items-center'>
                         {companyList2}
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
