@@ -85,7 +85,7 @@ export default function Navbar() {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform opacity-0"
                 >
-                    <div className={`lg:hidden bg-black bg-opacity-90 w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
+                    <div className={`lg:hidden ${scroll ? 'bg-white text-black' : 'bg-black text-white'} w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>
