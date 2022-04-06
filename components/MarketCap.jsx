@@ -37,7 +37,7 @@ export default function MarketCap() {
                     </div>
                 </div>
             </div>
-            <div className="bg-blue-700 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none flex items-center  p-10 md:mt-20">
+            <div className="bg-blue-700 md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none flex items-center p-5 lg:p-10 md:mt-20">
                 <div className="md:mr-10 text-white">
                     <div className="flex mb-2">
                         <a href="https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4"
