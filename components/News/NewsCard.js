@@ -17,16 +17,18 @@ export default function NewsCard({ title, image, slug, width, height, shadow, mn
 
     const router = useRouter()
     return (
-        <div className={`${width} border rounded-lg ${shadow} hover:shadow-2xl transition duration-200 ease-in text-left cursor-pointer`} onClick={() => { router.push(`/news/${slug}`) }}>
+        <div className={`${width} border rounded-xl ${shadow} hover:shadow-2xl transition duration-200 ease-in text-left cursor-pointer`} onClick={() => { router.push(`/news/${slug}`) }}>
             <div className=" overflow-hidden rounded-lg">
                 <div className={`relative w-full ${height} `}>
-                    <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-t-lg" />
+                    <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-lg" />
                 </div>
                 <div className="block py-4 space-y-2 px-6">
 
 
                     <h1 className="line-clamp-2 mb-20 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
-                    <div className="prose text-md font-bold line-clamp-2 h-5 text-[#646464]">Read More</div>
+                    <div className="flex justify-center">
+                    <button className="bg-blue-500 hover:bg-blue-400 transition ease-in duration-200 text-center text-white md:px-20 px-10 py-2 rounded-full ">Read More</button>
+                    </div>
 
 
                 </div>

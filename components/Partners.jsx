@@ -24,7 +24,7 @@ export default function Partners() {
     const companyList = companies.map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative xl:w-[120px] w-[160px] text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative w-[160px] md:w-[200px] text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt="" />
             </div>
 
@@ -49,7 +49,7 @@ export default function Partners() {
                     {/* <div className="grid xl:grid-cols-9 lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">
                         {companyList}
                     </div> */}
-                    <div className="flex items-center justify-center gap-y-10 gap-x-10 lg:gap-x-0 flex-wrap" >
+                    <div className="flex items-center justify-center gap-y-10 gap-x-10 flex-wrap" >
                         {companyList}
                     </div>
                     {/* <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:px-36 items-center'>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import i18next from 'i18next'
-import mont from '../img/mont-logo.png'
+import mont1 from '../img/mont-logo.png'
+import mont2 from '../img/logo-19.png'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import { Transition } from '@headlessui/react'
@@ -43,26 +44,38 @@ export default function Navbar() {
             <div className={` ${scroll ? 'bg-white text-black' : 'bg-black text-white'} sticky top-0 z-50`}>
                 <div className="container mx-auto lg:px-10 px-4">
                     <div className="flex justify-between items-center py-4">
-                        <div className="space-x-20 flex items-center">
-                            <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
+                        <div className="space-x-32 flex items-center">
+                            <div className='flex items-center space-x-2'>
+                                {scroll ?
+                                    <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
 
-                                <Image src={mont} alt="" width={40} height={40} layout="fixed" />
+                                        <Image src={mont1} alt="" width={40} height={40} layout="fixed" />
 
 
+
+                                    </div>
+                                    :
+                                    <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
+
+                                        <Image src={mont2} alt="" width={40} height={40} layout="fixed" />
+
+
+
+                                    </div>}
+                                <p className="text-white font-bold mt-1 text-2xl">MONT</p>
                             </div>
-
 
 
 
                             {/* desktop menu */}
-                            <div className="lg:flex hidden space-x-5">
-                                <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>About</button>
-                                <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
-                                <button className='hover:text-blue-500 text-lg transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>News</button>
+                            <div className="lg:flex hidden space-x-20">
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>About</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>News</button>
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
-                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage()}}>{language ? 'MN' : 'EN'}</button>
+                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage() }}>{language ? 'MN' : 'EN'}</button>
                         </div>
                         <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
                             <AiOutlineMenu />
