@@ -62,7 +62,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
-                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage(); router.reload() }}>{language ? 'MN' : 'EN'}</button>
+                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage()}}>{language ? 'MN' : 'EN'}</button>
                         </div>
                         <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
                             <AiOutlineMenu />
@@ -89,7 +89,7 @@ export default function Navbar() {
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>
-                        <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'EN' : 'MN'}</button>
+                        <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'MN' : 'EN'}</button>
                     </div>
                 </Transition>
 
