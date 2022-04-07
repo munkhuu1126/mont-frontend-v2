@@ -89,7 +89,7 @@ function App({ data }) {
 
 
       <Intro />
-      <div className='grid md:grid-cols-3 lg:px-10 px-4 gap-3 mt-10 container mx-auto'>
+      <div className='grid md:grid-cols-3 xl:px-10 px-4 gap-3 mt-10 container mx-auto'>
         <ExplanationCard icon='bi bi-coin' paragraph="explanation1" />
         <ExplanationCard icon='bi bi-globe' paragraph="explanation2" />
         <ExplanationCard icon='bi bi-safe' paragraph="explanation3" />
