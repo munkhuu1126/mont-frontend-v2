@@ -18,7 +18,7 @@ export default function MarketCap() {
     }
     return (
         <div className="xl:px-10 px-4 relative md:flex items-center md:my-20 container mx-auto">
-            <div className="md:absolute md:w-[250px] mx-auto md:mx-0 translate-y-5 md:h-[250px] w-[60px] h-[60px]">
+            <div className="md:absolute md:w-[250px] mx-auto md:mx-0 translate-y-5 md:translate-y-0 md:h-[250px] w-[60px] h-[60px]">
                 <Image src={mont} alt="" width='250' height='250'></Image>
             </div>
             <div className="container mx-auto lg:pl-20 md:pl-24  ">
