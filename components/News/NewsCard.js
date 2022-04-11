@@ -12,7 +12,7 @@ function GraphCMSImageLoader({ src }) {
 
 
 
-export default function NewsCard({ title, image, slug, width, height, shadow, mn_title }) {
+export default function NewsCard({ title, image, slug, width, height, shadow, description, mn_title }) {
 
 
     const router = useRouter()
@@ -24,10 +24,12 @@ export default function NewsCard({ title, image, slug, width, height, shadow, mn
                 </div>
                 <div className="block py-4 space-y-2 px-6">
 
-
-                    <h1 className="line-clamp-2 mb-20 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
+                    <div className="mb-20 space-y-1">
+                        <h1 className="line-clamp-2 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
+                        <p className="text-gray-400 prose h-20 line-clamp-3">{parse(description)}</p>
+                    </div>
                     <div className="flex justify-center">
-                    <button className="bg-blue-500 hover:bg-blue-400 transition ease-in duration-200 text-center text-white md:px-20 px-10 py-2 rounded-full ">Read More</button>
+                        <button className="bg-blue-500 hover:bg-blue-400 transition ease-in duration-200 text-center text-white md:px-20 px-10 py-2 rounded-full ">Read More</button>
                     </div>
 
 
