@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 
 
 export default function Banner() {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     return (
         <div className="my-20 banner-background">
             <div className="text-white relative">
@@ -19,16 +19,15 @@ export default function Banner() {
                     </p>
                     <div className="flex justify-center mt-5">
                         <button className="rounded-lg border-white border hover:text-black hover:bg-white transition ease-in duration-100 p-2 mx-auto">
-                            <Link href={'/proofoffunds'}>
+
                             See more
-                            </Link>
-                            
+
                         </button>
                     </div>
 
                 </div>
-                
-                
+
+
             </div>
         </div>
     )

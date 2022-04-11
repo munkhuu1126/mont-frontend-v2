@@ -100,7 +100,7 @@ export default function Navbar() {
                 >
                     <div className={`lg:hidden ${scroll ? 'bg-white text-black' : 'bg-black text-white'} w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
+                        <button className=' block transition my-5 ease-in duration-200'>Proof of Funds</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>
                         <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'MN' : 'EN'}</button>
                     </div>
