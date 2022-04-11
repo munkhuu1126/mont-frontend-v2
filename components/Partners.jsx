@@ -24,7 +24,7 @@ export default function Partners() {
     const companyList = companies.slice(0,5).map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative w-[160px]  text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative md:w-[160px] w-[120px]  text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt="" />
             </div>
 
@@ -33,7 +33,7 @@ export default function Partners() {
     const companyList2 = companies.slice(5,9).map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative w-[160px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative md:w-[160px] w-[120px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt=""/>
             </div>
 
@@ -44,7 +44,7 @@ export default function Partners() {
     return (
         <div className='container mx-auto my-5'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
-            <div className="lg:px-10 md:px-32 px-16  py-20 md:py-10 rounded-xl">
+            <div className="lg:px-10 md:px-32 px-4 py-20 md:py-10 rounded-xl">
                 <div className="grid grid-cols-2 space-y-12 lg:block">
                     <div className="grid lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">
                         {companyList}
