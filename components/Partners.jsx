@@ -10,6 +10,7 @@ import tenger from '../img/tenger.png'
 import trade from '../img/trade.png'
 import { nanoid } from 'nanoid'
 import Image from 'next/image'
+import Slider from 'react-slick'
 
 
 
@@ -18,14 +19,29 @@ export default function Partners() {
 
         return src;
     }
+    const settings = {
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        pauseOnHover: false,
+        arrows:false
+      };
 
 
     const companies = [dax, trade, idax, denode, corex, grape, diverse, ict, tenger]
-    const companyList = companies.slice(0,5).map((company) => {
+    const companyList = companies.map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative sm:w-[160px] w-[120px]  text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
-                <Image loader={GraphCMSImageLoader} src={company} alt="" />
+            <div key={nanoid()} className=" mx-auto relative sm:w-[160px] w-[120px] text-center h-[auto] justify-center transition ease-in duration-100">
+                <div className='w-6/12 mx-auto'>
+                    <div className="relative w-full h-24">
+                        <Image loader={GraphCMSImageLoader} src={company} alt="" layout="fill" objectFit='contain' />
+                    </div>
+                </div>
             </div>
 
         )
@@ -44,17 +60,20 @@ export default function Partners() {
     return (
         <div className='container mx-auto my-5'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
-            <div className="lg:px-10 md:px-32 px-4 py-20 md:py-10 rounded-xl">
-                <div className="grid grid-cols-2 space-y-12 lg:block">
-                    <div className="grid lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">
+            <div className="lg:px-10 px-4 py-20 md:py-10 rounded-xl">
+                <div className="block">
+                    {/* <div className="grid lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">
                         {companyList}
-                    </div>
+                    </div> */}
+                    <Slider {...settings}>
+                        {companyList}
+                    </Slider>
                     {/* <div className="flex items-center justify-center gap-y-10 gap-x-10 flex-wrap" >
                         {companyList}
                     </div> */}
-                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:px-36 items-center'>
+                    {/* <div className='grid lg:grid-cols-4 grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 xl:px-36 items-center'>
                         {companyList2}
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
