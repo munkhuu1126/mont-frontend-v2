@@ -70,7 +70,7 @@ export default function Navbar() {
                             {/* desktop menu */}
                             <div className="lg:flex hidden space-x-20">
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>About</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold'>Proof of Funds</button>
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>News</button>
                             </div>
                         </div>
