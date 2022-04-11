@@ -24,7 +24,7 @@ export default function Partners() {
     const companyList = companies.slice(0,5).map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative md:w-[160px] w-[120px]  text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative sm:w-[160px] w-[120px]  text-center h-[auto] lg:hover:scale-110 justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt="" />
             </div>
 
@@ -33,7 +33,7 @@ export default function Partners() {
     const companyList2 = companies.slice(5,9).map((company) => {
         return (
 
-            <div key={nanoid()} className="mx-auto relative md:w-[160px] w-[120px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
+            <div key={nanoid()} className="mx-auto relative sm:w-[160px] w-[120px] h-[auto] lg:hover:scale-110 text-center justify-center hover:grayscale-0 lg:grayscale transition ease-in duration-100">
                 <Image loader={GraphCMSImageLoader} src={company} alt=""/>
             </div>
 
