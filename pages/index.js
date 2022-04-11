@@ -111,10 +111,9 @@ function App({ data }) {
       <div className='container mx-auto lg:hidden md:grid hidden grid-cols-2 px-12 gap-x-12 gap-y-5 lg:gap-y-0'>
         {newsContentmd}
       </div>
-      <div className='container mx-auto lg:hidden md:hidden px-20 block'>
-        <Slider {...settings}>
+      <div className=' md:hidden overflow-x-scroll space-x-10 px-5 container flex'>
           {newsContentsm}
-        </Slider>
+        
       </div>
       <div className='flex justify-center  mt-10 mb-10'>
         <div className="bg-blue-500 py-3 px-4 rounded-full text-center flex items-center space-x-1 text-white font-bold hover:shadow-xl transition ease-in duration-100 cursor-pointer" onClick={() => { router.push('/news') }}>

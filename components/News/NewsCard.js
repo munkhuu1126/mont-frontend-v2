@@ -17,7 +17,7 @@ export default function NewsCard({ title, image, slug, width, height, shadow, de
 
     const router = useRouter()
     return (
-        <div className={`${width} border rounded-xl ${shadow} hover:shadow-2xl transition duration-200 ease-in text-left cursor-pointer`} onClick={() => { router.push(`/news/${slug}`) }}>
+        <div className={`${width} border rounded-xl shrink-0 md:w-auto w-[310px] ${shadow} hover:shadow-2xl transition duration-200 ease-in text-left cursor-pointer`} onClick={() => { router.push(`/news/${slug}`) }}>
             <div className=" overflow-hidden rounded-lg">
                 <div className={`relative w-full ${height} `}>
                     <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-lg" />
