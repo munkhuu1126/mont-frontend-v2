@@ -22,10 +22,10 @@ export default function Footer() {
                     </div>
                     <p className="mb-8 mt-2">Mongolia&apos;s First StableCoin</p>
                     <div className="text-white justify-between md:justify-start flex space-x-4 text-3xl">
-                        <BsTwitter />
-                        <BsFacebook />
-                        <BsInstagram />
-                        <BsTelegram />
+                        <button><BsTwitter className="hover:text-blue-500 duration-200 ease-in transition" /></button>
+                        <button><BsFacebook className="hover:text-blue-500 duration-200 ease-in transition" /></button>
+                        <button><BsInstagram className="hover:text-blue-500 duration-200 ease-in transition" /></button>
+                        <button><BsTelegram className="hover:text-blue-500 duration-200 ease-in transition" /></button>
                     </div>
                 </div>
 
@@ -33,22 +33,22 @@ export default function Footer() {
                 <div className="grid grid-cols-3 justify-between md:w-2/3">
                     <ul className="text-sm">
                         <h1 className="text-lg font-semibold mb-3">Products</h1>
-                        <li className="my-1">Benefit</li>
-                        <li className="my-1">Service</li>
-                        <li className="my-1">Project Team</li>
-                        <li className="my-1">Partners</li>
-                        <li className="my-1">FAQ</li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Benefit</button></li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Service</button></li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Project Team</button></li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Partners</button></li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">FAQ</button></li>
                     </ul>
 
                     <ul className="text-sm">
                         <h1 className="text-lg font-semibold mb-3">Support</h1>
-                        <li className="my-1">Support</li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Support</button></li>
                     </ul>
 
                     <ul className="text-sm">
                         <h1 className="text-lg font-semibold mb-3">Service</h1>
-                        <li className="my-1">Help Center</li>
-                        <li className="my-1">Referrals</li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Help Center</button></li>
+                        <li className="my-1"><button className="hover:text-blue-500 transition ease-in duration-200">Referrals</button></li>
                     </ul>
                 </div>
             </div>

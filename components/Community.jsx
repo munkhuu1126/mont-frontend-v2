@@ -48,7 +48,7 @@ export default function Community() {
                     {
                         icons.map(icon => {
                             return (
-                                <div className=" p-8 shadow-lg lg:w-1/3 h-[128px] hover:-translate-y-2 transition ease-in duration-200 rounded-md" key={icon.id}>
+                                <div className=" p-8 shadow-lg lg:w-1/3 h-[128px] hover:-translate-y-2 transition ease-in duration-200 cursor-pointer rounded-md" key={icon.id}>
                                     <div className="flex items-center mb-3 space-x-3">
                                     
                                     {icon.icon}
