@@ -24,10 +24,9 @@ export default function Partners() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 2750,
+        autoplaySpeed: 1000,
         cssEase: "linear",
-        pauseOnHover: false,
         arrows:false
       };
 
@@ -37,8 +36,8 @@ export default function Partners() {
         return (
 
             <div key={nanoid()} className=" mx-auto relative sm:w-[160px] w-[120px] text-center h-[auto] justify-center transition ease-in duration-100">
-                <div className='md:w-6/12 w-11/12 shrink-0 mx-auto'>
-                    <div className="relative w-full lg:h-24 h-12">
+                <div className='md:w-9/12 w-11/12 shrink-0  mx-auto'>
+                    <div className="relative w-full shadow-indigo-100 shadow-sm   lg:h-24 h-12">
                         <Image loader={GraphCMSImageLoader} src={company} alt="" layout="fill" objectFit='contain' />
                     </div>
                 </div>
@@ -61,7 +60,7 @@ export default function Partners() {
         <div className=' my-5'>
             <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
             <div className="py-10 rounded-xl">
-                <div className="block">
+                <div className="block mx-auto px-10 container">
                     {/* <div className="grid lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">
                         {companyList}
                     </div> */}
