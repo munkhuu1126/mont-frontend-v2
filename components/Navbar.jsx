@@ -77,7 +77,7 @@ export default function Navbar() {
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
                                 <Link to="partners" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('partners_header')}</Link>
                                 <Link to="community" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('learn_more')}</Link>
-                                <Link to="faq" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-boldcursor-pointer' >{t('faq')}</Link>
+                                <Link to="faq" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('faq')}</Link>
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
