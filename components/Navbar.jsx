@@ -7,12 +7,13 @@ import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-scroll'
 
 
 export default function Navbar() {
     const [language, setLanguage] = useState(i18next.language === 'en' ? true : false)
     const [scroll, setScroll] = useState(false)
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     const changeLanguage = () => {
         let temp = !language
         setLanguage(temp)
@@ -74,9 +75,9 @@ export default function Navbar() {
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>{t('about_header')}</button>
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
                                 <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#partners') }}>{t('partners_header')}</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#community') }}>{t('learn_more')}</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#faq') }}>{t('faq')}</button>
+                                <Link to="partners" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('partners_header')}</Link>
+                                <Link to="community" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('learn_more')}</Link>
+                                <Link to="faq" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-boldcursor-pointer' >{t('faq')}</Link>
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
@@ -107,9 +108,9 @@ export default function Navbar() {
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>{t('about_header')}</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
                         <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#partners') }}>{t('partners_header')}</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#community') }}>{t('learn_more')}</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#faq') }}>{t('faq')}</button>
+                        <Link to="partners" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('partners_header')}</Link>
+                        <Link to="community" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('learn_more')}</Link>
+                        <Link to="faq" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('faq')}</Link>
                         <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'MN' : 'EN'}</button>
                     </div>
                 </Transition>
