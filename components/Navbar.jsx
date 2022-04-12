@@ -48,9 +48,9 @@ export default function Navbar() {
                 <div className="container mx-auto lg:px-10 px-4">
                     <div className="flex justify-between items-center py-4">
                         <div className="space-x-32 flex items-center">
-                            <div className='flex items-center space-x-2'>
+                            <div className='flex items-center space-x-2 cursor-pointer' onClick={() => { router.push('/') }}>
                                 {scroll ?
-                                    <div className="flex w-[40px] cursor-pointer h-[40px]" onClick={() => { router.push('/') }}>
+                                    <div className="flex w-[40px] cursor-pointer h-[40px]" >
 
                                         <Image src={mont1} alt="" width={40} height={40} layout="fixed" />
 
@@ -58,7 +58,7 @@ export default function Navbar() {
 
                                     </div>
                                     :
-                                    <div className="flex w-[40px] cursor-pointer h-[40px]" onClick={() => { router.push('/') }}>
+                                    <div className="flex w-[40px] cursor-pointer h-[40px]">
 
                                         <Image src={mont2} alt="" width={40} height={40} layout="fixed" />
 
