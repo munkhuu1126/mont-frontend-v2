@@ -20,7 +20,7 @@ export default function Banner() {
                     <div className="flex justify-center mt-5">
                         <button className="rounded-lg border-white border hover:text-black hover:bg-white transition ease-in duration-100 p-2 mx-auto">
                             <Link href={'/proofoffunds'}>
-                            See more
+                            {t('see_more_pof')}
                             </Link>
                             
                         </button>

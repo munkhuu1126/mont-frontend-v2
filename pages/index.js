@@ -13,8 +13,10 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Slider from 'react-slick';
 import header from '../img/header.gif'
+import { useTranslation } from 'react-i18next';
 
 function App({ data }) {
+  const {t} = useTranslation()
   const router = useRouter()
   const newsContent = data.data.slice(0, 3).map(newsData => {
     return (
@@ -83,16 +85,16 @@ function App({ data }) {
     <div style={{ backgroundImage: `url("${header.src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', }}
       className="App home-background">
       <Head>
-        <title>About</title>
+        <title>MONT | Stablecoin</title>
         <link rel="icon" href='/mont-logo.ico' />
       </Head>
 
 
       <Intro />
       <div className='grid md:grid-cols-3 xl:px-10 px-4 gap-3 mt-10 container mx-auto'>
-        <ExplanationCard icon='bi bi-coin' paragraph="explanation1" />
+        <ExplanationCard icon='bi bi-graph-up-arrow' paragraph="explanation1" />
         <ExplanationCard icon='bi bi-globe' paragraph="explanation2" />
-        <ExplanationCard icon='bi bi-safe' paragraph="explanation3" />
+        <ExplanationCard icon='bi bi-phone' paragraph="explanation3" />
       </div>
       <div className='px-4 lg:px-10'>
         <MarketCap />
@@ -103,7 +105,7 @@ function App({ data }) {
       <div className='px-4 md:px-0'>
         <Partners />
       </div>
-      <h1 className="font-bold text-3xl text-blue-500 text-center mb-5">News</h1>
+      <h1 className="font-bold text-4xl text-blue-500 text-center mb-5">{t('news_header')}</h1>
 
       <div className='container mx-auto hidden lg:grid grid-cols-3 xl:px-32 gap-x-12 gap-y-5 lg:gap-y-0'>
         {newsContent}
@@ -121,7 +123,7 @@ function App({ data }) {
             className=' font-bold '
           >
 
-            See all
+            {t('see_all_news')}
 
           </button>
           <i className="bi bi-arrow-right "></i>

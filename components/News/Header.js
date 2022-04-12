@@ -8,6 +8,7 @@ import {useRouter} from 'next/router'
 
 
 
+
 export default function Header({ latestNews }) {
     const { t } = useTranslation()
     const router = useRouter()
@@ -28,10 +29,10 @@ export default function Header({ latestNews }) {
                     </div>
                     <div className="block py-4 lg:w-1/2 space-y-2 px-6">
 
-                        <h1 className="text-sm text-gray-500">Latest News</h1>
+                        <h1 className="text-sm text-gray-500">{t('latest_news')}</h1>
                         <p className="line-clamp-2 mb-20 font-bold text-blue-500 text-4xl overflow-hidden">{latestNews.title}</p>
                         <div className="">{parser(latestNews.card_desc)}</div>
-                        <div className=" text-md font-bold line-clamp-2 text-blue-500 underline lg:no-underline  lg:group-hover:text-blue-500 h-5 lg:text-[#646464]">Read More</div>
+                        <div className=" text-md font-bold line-clamp-2 text-blue-500 underline lg:no-underline  lg:group-hover:text-blue-500 h-5 lg:text-[#646464]">{t('read_more_news')}</div>
 
 
                     </div>

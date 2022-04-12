@@ -82,8 +82,8 @@ export default function Faq() {
     })
 
     return (
-        <div>
-            <h1 className="font-bold text-3xl text-blue-500 text-center">FAQ</h1>
+        <div id='faq'>
+            <h1  className="font-bold text-3xl text-blue-500 text-center">{t('faq')}</h1>
             {accordians}
 
         </div>

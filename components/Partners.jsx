@@ -1,16 +1,17 @@
 import React from 'react'
-import corex from '../img/corex.png'
-import dax from '../img/dax.png'
-import denode from '../img/denode.png'
-import diverse from '../img/diverse.png'
-import grape from '../img/gcm.png'
-import ict from '../img/ict.png'
-import idax from '../img/idax.png'
-import tenger from '../img/tenger.png'
-import trade from '../img/trade.png'
+import corex from '../img/logos-02.png'
+import dax from '../img/logos-03.png'
+import denode from '../img/logos-04.png'
+import diverse from '../img/logos-05.png'
+import grape from '../img/logos-06.png'
+import ict from '../img/logos-07.png'
+import idax from '../img/logos-08.png'
+import tenger from '../img/logos-09.png'
+import trade from '../img/logos-10.png'
 import { nanoid } from 'nanoid'
 import Image from 'next/image'
 import Slider from 'react-slick'
+import { useTranslation } from 'react-i18next'
 
 
 
@@ -21,23 +22,23 @@ export default function Partners() {
     }
     const settings = {
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2750,
-        autoplaySpeed: 1000,
+        speed: 2850,
+        autoplaySpeed: 0,
         cssEase: "linear",
         arrows:false
       };
 
-
+    const {t} = useTranslation()
     const companies = [dax, trade, idax, denode, corex, grape, diverse, ict, tenger]
     const companyList = companies.map((company) => {
         return (
 
             <div key={nanoid()} className=" mx-auto relative sm:w-[160px] w-[120px] text-center h-[auto] justify-center transition ease-in duration-100">
                 <div className='md:w-9/12 w-10/12 shrink-0  mx-auto'>
-                    <div className="relative w-full   lg:h-24 h-12">
+                    <div className="relative w-full bg-white shadow-sm  lg:h-24 h-12">
                         <Image loader={GraphCMSImageLoader} src={company} alt="" layout="fill" objectFit='contain' />
                     </div>
                 </div>
@@ -57,8 +58,8 @@ export default function Partners() {
 
 
     return (
-        <div className=' my-5'>
-            <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">Partners</h1>
+        <div id="partners" className=' my-5'>
+            <h1 className="text-blue-500 text-4xl font-bold text-center mb-5">{t('partners_header')}</h1>
             <div className="py-10 rounded-xl">
                 <div className="block mx-auto lg:px-10 container">
                     {/* <div className="grid lg:grid-cols-5 gap-y-10 xl:gap-y-0 md:gap-x-10 lg:gap-x-0 items-center">

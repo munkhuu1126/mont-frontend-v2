@@ -6,11 +6,13 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next'
 
 
 export default function Navbar() {
     const [language, setLanguage] = useState(i18next.language === 'en' ? true : false)
     const [scroll, setScroll] = useState(false)
+    const {t} = useTranslation()
     const changeLanguage = () => {
         let temp = !language
         setLanguage(temp)
@@ -69,9 +71,12 @@ export default function Navbar() {
 
                             {/* desktop menu */}
                             <div className="lg:flex hidden space-x-20">
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>About</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>News</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>{t('about_header')}</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#partners') }}>{t('partners_header')}</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#community') }}>{t('learn_more')}</button>
+                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/#faq') }}>{t('faq')}</button>
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
@@ -99,9 +104,12 @@ export default function Navbar() {
                     leaveTo="transform opacity-0"
                 >
                     <div className={`lg:hidden ${scroll ? 'bg-white text-black' : 'bg-black text-white'} w-full items-center p-5 absolute lg:p-0 text-lg lg:space-x-5`}>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>About</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>Proof of Funds</button>
-                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>News</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/') }}>{t('about_header')}</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#partners') }}>{t('partners_header')}</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#community') }}>{t('learn_more')}</button>
+                        <button className=' block transition my-5 ease-in duration-200' onClick={() => { router.push('/#faq') }}>{t('faq')}</button>
                         <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'MN' : 'EN'}</button>
                     </div>
                 </Transition>
