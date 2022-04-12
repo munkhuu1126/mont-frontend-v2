@@ -47,7 +47,7 @@ export default function Navbar() {
                         <div className="space-x-32 flex items-center">
                             <div className='flex items-center space-x-2'>
                                 {scroll ?
-                                    <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
+                                    <div className="flex w-[40px] cursor-pointer h-[40px]" onClick={() => { router.push('/') }}>
 
                                         <Image src={mont1} alt="" width={40} height={40} layout="fixed" />
 
@@ -55,14 +55,14 @@ export default function Navbar() {
 
                                     </div>
                                     :
-                                    <div className="flex w-[40px] cursor-pointer items-center h-[40px]" onClick={() => { router.push('/') }}>
+                                    <div className="flex w-[40px] cursor-pointer h-[40px]" onClick={() => { router.push('/') }}>
 
                                         <Image src={mont2} alt="" width={40} height={40} layout="fixed" />
 
 
 
                                     </div>}
-                                <p className="text-white font-bold mt-1 text-2xl">MONT</p>
+                                <p className="text-white font-bold text-2xl">MONT</p>
                             </div>
 
 
