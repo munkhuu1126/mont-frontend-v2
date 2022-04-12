@@ -20,7 +20,7 @@ export default function Header({ latestNews }) {
 
     return (
         <div>
-            <div className="bg-blue-500 px-4 lg:px-60 py-10 ">
+            <div className="home-background px-4 lg:px-60 py-10 ">
                 <div className="container bg-white mx-auto group rounded-lg px-4 lg:px-10 xl:px-20 py-10 hover:shadow-2xl cursor-pointer transition duration-300 ease-in lg:flex" onClick={()=>{router.push(`/news/${latestNews.id}`)}}>
                     <div className="lg:w-1/2">
                         <div className=" relative h-72">
