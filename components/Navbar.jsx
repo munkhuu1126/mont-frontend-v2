@@ -81,7 +81,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
-                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage() }}>{language ? 'MN' : 'EN'}</button>
+                            <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage() }}>{language ? 'EN' : 'MN'}</button>
                         </div>
                         <button onClick={() => { setMenu(!menu) }} className="lg:hidden flex p-1 rounded-lg">
                             <AiOutlineMenu />
@@ -111,7 +111,7 @@ export default function Navbar() {
                         <Link to="partners" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('partners_header')}</Link>
                         <Link to="community" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('learn_more')}</Link>
                         <Link to="faq" spy={true} smooth={true} className=' block transition my-5 ease-in duration-200' >{t('faq')}</Link>
-                        <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'MN' : 'EN'}</button>
+                        <button className=" text-blue-500 block transition ease-in my-5 duration-200" onClick={() => changeLanguage()}>{language ? 'EN' : 'MN'}</button>
                     </div>
                 </Transition>
 
