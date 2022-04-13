@@ -7,7 +7,7 @@ import { FaFacebook, FaGithub, FaTelegram } from 'react-icons/fa'
 import audit from '../img/certik-logotype-h-w.png'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import krypto from '../img/krypto-white.png'
+import krypto from '../img/krypto-circle.svg'
 export default function Footer() {
     const { t } = useTranslation()
     const router = useRouter()
@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                     <p className="mb-8 mt-2">Mongolia&apos;s First StableCoin</p>
                     <div className="text-white justify-between md:justify-start items-center flex space-x-4 text-3xl">
-                        <button><Link href="https://krypto.mn/currencies/mongol-tether" passHref><Image src={krypto} width="36" height="36" alt='' className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
+                        <button className="mt-1"><Link href="https://krypto.mn/currencies/mongol-tether" passHref><Image src={krypto} width="30" height="30" alt='' className="hover:opacity-50 bg-white rounded-full transition ease-in duration-200" /></Link></button>
                         <button><Link href="https://www.facebook.com/MONTstablecoin" passHref><FaFacebook className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
 
                         <button><Link href="https://t.me/MoNTstablecoin" passHref><FaTelegram className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
