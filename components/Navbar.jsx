@@ -44,7 +44,7 @@ export default function Navbar() {
     return (
         <>
 
-            <div className={` ${scroll ? 'bg-white text-black' : 'bg-black text-white'} sticky top-0 z-50`}>
+            <div className={` ${scroll ? 'bg-white text-black' : 'bg-black text-white'} font-rubik sticky top-0 z-50`}>
                 <div className="container mx-auto lg:px-10 px-4">
                     <div className="flex justify-between items-center py-4">
                         <div className="space-x-32 flex items-center">

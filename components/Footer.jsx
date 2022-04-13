@@ -12,7 +12,7 @@ export default function Footer() {
     const { t } = useTranslation()
     const router = useRouter()
     return (
-        <div className="bg-black text-white ">
+        <div className="bg-black text-white font-rubik ">
             <div className='container mx-auto px-10 py-16 justify-between md:flex'>
 
 
