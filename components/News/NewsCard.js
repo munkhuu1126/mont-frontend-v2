@@ -24,7 +24,7 @@ export default function NewsCard({ title, image, slug, width, height, shadow, de
                 <div className={`relative w-full ${height} `}>
                     <Image loader={GraphCMSImageLoader} src={image} layout='fill' objectFit="cover" alt='' className="rounded-lg" />
                 </div>
-                <div className="block py-4 space-y-2 px-6">
+                <div className="block bg-white py-4 space-y-2 px-6">
 
                     <div className="mb-20 space-y-1">
                         <h1 className="line-clamp-2 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
