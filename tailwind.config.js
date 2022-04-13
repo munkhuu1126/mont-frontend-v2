@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'rubik' : ['"Rubik"', 'cursive']
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
