@@ -37,7 +37,7 @@ export default function Partners() {
         return (
 
             <div key={nanoid()} className=" mx-auto relative sm:w-[160px] w-[120px] text-center h-[auto] justify-center transition ease-in duration-100">
-                <div className='md:w-9/12 w-10/12 shrink-0  mx-auto'>
+                <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
                     <div className="relative w-full bg-white shadow-sm  lg:h-24 h-12">
                         <Image loader={GraphCMSImageLoader} src={company} alt="" layout="fill" objectFit='contain' />
                     </div>
