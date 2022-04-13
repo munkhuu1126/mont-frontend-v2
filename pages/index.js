@@ -83,7 +83,7 @@ function App({ data }) {
   })
   return (
     <div style={{ backgroundImage: `url("${header.src}")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'top center', }}
-      className="App home-background">
+      className="App font-rubik home-background">
       <Head>
         <title>MONT | Stablecoin</title>
         <link rel="icon" href='/mont-logo.ico' />

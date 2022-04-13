@@ -11,7 +11,7 @@ export default function Post({ data }) {
     return `https://news.stablecoin.mn/assets/${src}`;
   }
   return (
-    <div className="container mx-auto lg:px-0 px-8 prose prose-img:rounded-xl prose-p:text-lg hover:prose-a:text-red-500 prose-slate my-10">
+    <div className="container font-rubik mx-auto lg:px-0 px-8 prose prose-img:rounded-xl prose-p:text-lg hover:prose-a:text-red-500 prose-slate my-10">
       <Head>
         <title>{currentContent.title}</title>
       </Head>

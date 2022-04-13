@@ -30,7 +30,7 @@ export default function news({ data }) {
 
 
     return (
-        <div>
+        <div className="font-rubik">
             <Head>
                 <title>News</title>
                 <link rel="icon" href="/mont-logo.ico" />

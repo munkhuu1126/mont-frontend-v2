@@ -13,7 +13,7 @@ export default function ProofOfFunds({data}) {
     const {t} = useTranslation()
     return (
 
-        <div className="text-white p-10 home-background">
+        <div className="text-white font-rubik p-10 home-background">
             <Head>
                 <title>Proof of Funds | MONT</title>
                 <link rel="icon" href="/mont-logo.ico" />
