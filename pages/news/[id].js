@@ -19,7 +19,7 @@ export default function Post({ data }) {
       <div className="relative">
         <Image loader={GraphCMSImageLoader} src={currentContent.main_image} height="100%" width='100%' layout="responsive" objectFit='contain' alt='' className="rounded-lg" />
       </div>
-      <div className="my-10">{parser(currentContent.content)}</div>
+      <div className="my-10 content-stuff">{parser(currentContent.content)}</div>
 
     </div>
   )

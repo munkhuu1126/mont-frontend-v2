@@ -49,3 +49,6 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
+.content-stuff a:hover{
+  color:#3b82f6;
+}
