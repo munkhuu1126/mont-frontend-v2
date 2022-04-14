@@ -1,5 +1,5 @@
 import React from 'react'
-import mont from '../img/logo-19.png'
+import mont from '../img/logo-blue.png'
 import Image from 'next/image'
 
 export default function LoadingScreen() {
