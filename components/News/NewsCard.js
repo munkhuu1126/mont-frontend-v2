@@ -13,7 +13,7 @@ function GraphCMSImageLoader({ src }) {
 
 
 
-export default function NewsCard({ title, image, slug, width, height, shadow, description, mn_title }) {
+export default function NewsCard({ title, image, slug, width, height, shadow, description, card_desc }) {
     const {t} = useTranslation()
 
 
@@ -28,7 +28,7 @@ export default function NewsCard({ title, image, slug, width, height, shadow, de
 
                     <div className="mb-20 space-y-1">
                         <h1 className="line-clamp-2 font-bold text-blue-500 text-xl h-14 overflow-hidden">{title}</h1>
-                        <p className="text-gray-400 font-extralight prose h-20 line-clamp-3">{parse(description)}</p>
+                        <p className="text-gray-400 font-extralight prose h-20 line-clamp-3">{parse(card_desc)}</p>
                     </div>
                     <div className="flex justify-center">
                         <button className="bg-blue-500 hover:bg-blue-400 transition ease-in duration-200 text-center text-white md:px-20 px-10 py-2 rounded-full ">{t('read_more_news')}</button>
