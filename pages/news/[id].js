@@ -16,8 +16,8 @@ export default function Post({ data }) {
         <title>{currentContent.title}</title>
       </Head>
       <h1 className="font-bold break-words text-4xl">{currentContent.title}</h1>
-      <div className="relative w-auto h-[160px] md:w-full md:h-[360px]">
-        <Image loader={GraphCMSImageLoader} src={currentContent.main_image} layout="fill" objectFit="cover" alt='' className="rounded-lg" />
+      <div className="relative">
+        <Image loader={GraphCMSImageLoader} src={currentContent.main_image} height="100%" width='100%' layout="responsive" objectFit='contain' alt='' className="rounded-lg" />
       </div>
       <div className="my-10">{parser(currentContent.content)}</div>
 
