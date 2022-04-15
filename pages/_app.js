@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(()=>{
       setLoading(true)
-    }, 8000)
+    }, 5000)
   }, [])
   return (
     <>
