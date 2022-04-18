@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import i18next from 'i18next'
-import mont1 from '../img/mont-logo.png'
+import mont1 from '../img/logo-blue.png'
 import mont2 from '../img/logo-19.png'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Image from 'next/image'
