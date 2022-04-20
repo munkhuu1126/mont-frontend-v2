@@ -41,6 +41,27 @@ export default function Navbar() {
 
     const [menu, setMenu] = useState(false)
     const router = useRouter()
+    const nav1 = (
+        <div className="lg:flex hidden lg:space-x-6 xl:space-x-10 2xl:space-x-20">
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>{t('about_header')}</button>
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
+            <Link to="partners" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('partners_header')}</Link>
+            <Link to="community" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('learn_more')}</Link>
+            <Link to="faq" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('faq')}</Link>
+        </div>
+    )
+    const nav2 = (
+        <div className="lg:flex hidden lg:space-x-6 xl:space-x-10 2xl:space-x-20">
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>{t('about_header')}</button>
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
+            <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
+            <button onClick={() => { router.push('/#partners') }} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('partners_header')}</button>
+            <button onClick={() => { router.push('/#community') }} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('learn_more')}</button>
+            <button onClick={() => { router.push('/#faq') }} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('faq')}</button>
+        </div>
+    )
+    
     return (
         <>
 
@@ -71,14 +92,9 @@ export default function Navbar() {
 
 
                             {/* desktop menu */}
-                            <div className="lg:flex hidden lg:space-x-6 xl:space-x-10 2xl:space-x-20">
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/') }}>{t('about_header')}</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/proofoffunds') }}>{t('transparency')}</button>
-                                <button className='hover:text-blue-500  transition ease-in duration-200 font-bold' onClick={() => { router.push('/news') }}>{t('news_header')}</button>
-                                <Link to="partners" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('partners_header')}</Link>
-                                <Link to="community" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('learn_more')}</Link>
-                                <Link to="faq" spy={true} smooth={true} className=' hover:text-blue-500 cursor-pointer transition ease-in duration-200 font-bold' >{t('faq')}</Link>
-                            </div>
+                            {
+                                (router.pathname === '/' || router.pathname === '/#partners' || router.pathname === '/#faq' || router.pathname === '/#community') ? nav1 : nav2 
+                            }
                         </div>
                         <div className=" px-4 lg:flex hidden lg:px-0 items-center">
                             <button className=" hover:text-blue-500 transition ease-in duration-200 font-bold" onClick={() => { changeLanguage() }}>{language ? 'EN' : 'MN'}</button>
