@@ -17,7 +17,7 @@ export default function Community() {
             icon: <BsNewspaper className="text-2xl text-blue-500"/>,
             name:'Whitepaper',
             description: 'whitepaper',
-            link:"https://news.stablecoin.mn/assets/47395190-0e46-41f1-9dd0-716861797e24"
+            link:"https://news.stablecoin.mn/assets/eae02cbc-9f49-420f-a5c7-39e7806491fd"
         },
         {
             id:1,
