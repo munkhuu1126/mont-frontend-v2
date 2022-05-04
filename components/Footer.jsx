@@ -26,11 +26,11 @@ export default function Footer() {
                     </div>
                     <p className="mb-8 mt-2">Mongolia&apos;s First StableCoin</p>
                     <div className="text-white justify-between md:justify-start items-center flex space-x-4 text-3xl">
-                        <button className="mt-1"><Link href="https://krypto.mn/currencies/mongol-tether" passHref><Image src={krypto} width="30" height="30" alt='' className="hover:opacity-50 bg-white rounded-full transition ease-in duration-200" /></Link></button>
-                        <button><Link href="https://www.facebook.com/MONTstablecoin" passHref><FaFacebook className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
+                        <button className="mt-1" onClick={()=>{window.open('https://krypto.mn/currencies/mongol-tether','_blank')}}><Image src={krypto} width="30" height="30" alt='' className="hover:opacity-50 bg-white rounded-full transition ease-in duration-200" /></button>
+                        <button onClick={()=>{window.open('https://www.facebook.com/MONTstablecoin','_blank')}}><FaFacebook className="hover:opacity-50 transition ease-in duration-200" /></button>
 
-                        <button><Link href="https://t.me/MoNTstablecoin" passHref><FaTelegram className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
-                        <button><Link href="https://github.com/DiverseSolutions/Mont-Stable-Coin" passHref><FaGithub className="hover:opacity-50 transition ease-in duration-200" /></Link></button>
+                        <button onClick={()=>{window.open('https://t.me/MoNTstablecoin','_blank')}}><FaTelegram className="hover:opacity-50 transition ease-in duration-200" /></button>
+                        <button onClick={()=>{window.open('https://github.com/DiverseSolutions/Mont-Stable-Coin','_blank')}}><FaGithub className="hover:opacity-50 transition ease-in duration-200" /></button>
                     </div>
                 </div>
 
