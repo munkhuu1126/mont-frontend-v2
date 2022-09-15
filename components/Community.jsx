@@ -50,13 +50,13 @@ export default function Community() {
             link: "https://github.com/DiverseSolutions/Mont-Stable-Coin"
         },
 
-        {
-            id: 6,
-            icon: <FaChartBar className="text-2xl text-blue-500" />,
-            name: 'BSCScan',
-            description: 'bscscan',
-            link: "https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4"
-        },
+        // {
+        //     id: 6,
+        //     icon: <FaChartBar className="text-2xl text-blue-500" />,
+        //     name: 'BSCScan',
+        //     description: 'bscscan',
+        //     link: "https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4"
+        // },
 
     ]
     const { t } = useTranslation()
@@ -72,11 +72,11 @@ export default function Community() {
                             <div className="flex items-center mb-3 space-x-3">
                                 <BsNewspaper className="text-2xl text-blue-500" />
                                 <p className="font-bold text-blue-500 text-xl">Whitepaper</p>
-                                <button onClick={()=>{window.open('https://news.stablecoin.mn/assets/eae02cbc-9f49-420f-a5c7-39e7806491fd', '_blank')}} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
+                                <button onClick={() => { window.open('https://news.stablecoin.mn/assets/eae02cbc-9f49-420f-a5c7-39e7806491fd', '_blank') }} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
                                     MN
                                 </button>
                                 <p className="text-blue-500 text-bold text-xl">/</p>
-                                <button onClick={()=>{window.open('https://news.stablecoin.mn/assets/f1371090-4aa9-4438-932d-a76726e7e313.pdf','_blank')}} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
+                                <button onClick={() => { window.open('https://news.stablecoin.mn/assets/f1371090-4aa9-4438-932d-a76726e7e313.pdf', '_blank') }} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
                                     EN
                                 </button>
                             </div>
@@ -87,8 +87,8 @@ export default function Community() {
                     {
                         icons.map(icon => {
                             return (
-                                <div className=" xl:p-8 lg:p-6 p-8 shadow-lg  h-[128px] bg-white hover:shadow-2xl transition ease-in duration-200 rounded-md" key={icon.id}>
-                                    <div onClick={() => { window.open(icon.link, '_blank') }} className="cursor-pointer">
+                                <div onClick={() => { window.open(icon.link, '_blank') }} className=" xl:p-8 lg:p-6 p-8 cursor-pointer shadow-lg  h-[128px] bg-white hover:shadow-2xl transition ease-in duration-200 rounded-md" key={icon.id}>
+                                    <div  className="cursor-pointer">
                                         <div className="flex items-center mb-3 space-x-3">
 
                                             {icon.icon}
@@ -102,6 +102,22 @@ export default function Community() {
                             )
                         })
                     }
+                    <div className=" xl:p-8 lg:p-6 p-8 shadow-lg  h-[128px] bg-white hover:shadow-2xl transition ease-in duration-200 rounded-md">
+                        <div className="cursor-pointer">
+                            <div className="flex items-center mb-3 space-x-3">
+                                <FaChartBar className="text-2xl text-blue-500" />
+                                <button onClick={() => { window.open('https://bscscan.com/token/0x2D279FDECdf7f5705F5ff0bD80F8D9a305Ea87F4', '_blank') }} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
+                                    BSCScan
+                                </button>
+                                <p className="text-blue-500 text-bold text-xl">/</p>
+                                <button onClick={() => { window.open('https://polygonscan.com/token/0x7ea130ec7508a1224737b7d56f108601c6a46c73', '_blank') }} className="font-bold text-blue-500 text-lg hover:text-blue-300 transition ease-in duration-200">
+                                    PolygonScan
+                                </button>
+                            </div>
+                        </div>
+                        <p className="text-blue-500 text-left">{t('bscscan')}</p>
+
+                    </div>
                 </div>
             </div>
         </div>
