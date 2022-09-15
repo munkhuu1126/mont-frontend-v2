@@ -6,6 +6,8 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import HttpApi from 'i18next-http-backend';
 import { useState, useEffect } from 'react';
 import LoadingScreen from '../components/LoadingScreen';
+import Head from 'next/head'
+import Router from 'next/router'
 
 i18n
   .use(HttpApi)
@@ -33,20 +35,31 @@ i18n
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false)
-  useEffect(() => {
-    setTimeout(()=>{
-      setLoading(true)
-    }, 5000)
-  }, [])
+  Router.events.on('routeChangeStart', (url) => {
+
+    setLoading(true)
+  })
+  Router.events.on('routeChangeComplete', (url) => {
+    setLoading(false)
+  })
   return (
     <>
       {
         loading ? (
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>)
+          <>
+            <Head>
+              <title>MONT | Stablecoin</title>
+              <link rel="icon" href='/mont-logo.ico' />
+            </Head>
+            <LoadingScreen />
+          </>
+        )
           :
-          (<LoadingScreen />)
+          (
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          )
       }
 
     </>)
